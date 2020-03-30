@@ -42,3 +42,26 @@
   } 
   }
   
+  .c2{
+
+    padding: 5em 0 0 0;
+    padding: 0;
+  }
+  .c2 .soft{
+        background:#0121987a;
+        height: 100%;
+  }
+  .img2{
+      background-image: url('../../media/img/2c.jpg');
+  }
+  .parallaxminor {
+    height: 100%;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    transition: all .25s ease-in;
+    height: 50vh;
+    min-height: 0;
+}
+
