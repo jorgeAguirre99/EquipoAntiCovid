@@ -22,8 +22,8 @@
         'get_data': false,
         'callback': null,
         'styling': true,
-        'items': 8,
-        'items_per_row': 4,
+        'items': 6,
+        'items_per_row': 3,
         'margin': 0.5,
         'image_size': 640
     };
@@ -97,7 +97,7 @@
                 styles.profile_name = " style='font-size:1.2em;'";
                 styles.profile_biography = " style='font-size:1em;'";
                 var width = (100 - options.margin * 2 * options.items_per_row)/options.items_per_row;
-                styles.gallery_image = " style='margin:"+options.margin+"% "+options.margin+"%;width:"+width+"%;float:left;'";
+                styles.gallery_image = " style='margin:"+options.margin+"% "+options.margin+"%;width:100%;float:left;'";
             }
 
             var html = "";
@@ -126,7 +126,7 @@
                     var imgs = (data.edge_owner_to_timeline_media || data.edge_hashtag_to_media).edges;
                         max = (imgs.length > options.items) ? options.items : imgs.length;
 
-                    html += "<div class='instagram_gallery'>";
+                    html += "<div class='container-fluid'><div class='row d-flex justify-content-center'>";
                     for(var i = 0; i < max; i++){
                         var url = "https://www.instagram.com/p/" + imgs[i].node.shortcode,
                             image, type_resource, caption;
@@ -152,15 +152,17 @@
                         }else{
                             caption = (is_tag ? data.name : data.username) + " image " + i;
                         }
-
-                        html += "<a href='" + url +"' class='instagram-" + type_resource + "' rel='noopener' target='_blank'>";
-                        html += "<img class = 'zoom-image' src='" + image + "' alt='" + escape_string(caption) + "'" + styles.gallery_image +" />";
-                        html += "</a>";
+                        if(i == 3){
+                          html+="</div><div class='row d-flex justify-content-center'>";
+                        }
+                        html += "<div class = 'card col-md-3 mx-2 my-2'><a href='" + url +"' class='instagram-" + type_resource + "' rel='noopener' target='_blank'>";
+                        html += "<img class = 'zoom-image card-img-top' src='" + image + "' alt='" + escape_string(caption) + "'" + styles.gallery_image +" />";
+                        html += "</a><div class = 'card-body'><p>"+escape_string(caption)+"</p></div></div>";
                     }
-                    html += "</div>";
+                    html += "</div></div>";
                 }
             }
-
+//<a href='" + url +"' class='instagram-" + type_resource + "' rel='noopener' target='_blank'></a>
             if(options.display_igtv && typeof data.edge_felix_video_timeline !== "undefined"){
                 var igtv = data.edge_felix_video_timeline.edges,
                     max = (igtv.length > options.items) ? options.items : igtv.length
