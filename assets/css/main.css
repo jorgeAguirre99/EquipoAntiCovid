@@ -13,10 +13,6 @@ All Rights Reserved
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Anton|Lobster|Questrial|Rajdhani:300&display=swap');
 
 /*Opciones Generales--------------------------------------------------------------------------------------------------------------------*/
-* {
-    font-family: 'Open Sans', 'sans-serif';
-    font-weight: 300;
-}
 body, html {
     height: 100%;
 }
@@ -221,7 +217,12 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     }
 }
 /*Contenedores--------------------------------------------------------------------------------------------------------------------*/
-
+.c1{
+    padding: 0;
+    height: 150px;
+    color: black;
+    padding: 5em 0 0 0;
+}
 .c3 {
     z-index: 100000!important;
     padding: 0;
@@ -517,7 +518,6 @@ height: 80vh;
 /*Parallax--------------------------------------------------------------------------------------------------------------------*/          
 /*Página Principal*/
 .parallax { 
-    background-image: url('../media/img/techdam.jpg');
     height: 100%;
     background-attachment: fixed;
     background-position: center;
@@ -533,7 +533,6 @@ height: 80vh;
     background-repeat: no-repeat;
     background-size: cover;
     transition: all .25s ease-in;
-    height: 70vh;
     min-height: 0;
 }
 
