@@ -9,8 +9,18 @@
     </script>
   </head>
   <body>
-    <div class="">
-      
+    <style>
+.zoom-image {
+  transition: 1s; /* Animation */
+  margin: 0 auto;
+}
+
+.zoom-image:hover {
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+</style>
+    <div class="" style="text-align:center;height:1000px;width:1000px;">
+      <p style="font-weight:bold;font-size:xx-large;">Follow us on instagram!</p>
       <div id="instagram-feed-demo" class="instagram_feed">
       </div>
     </div>
@@ -24,7 +34,8 @@
           'display_biography': false,
           'display_igtv': false,
           'items':8,
-          'display_gallery':true
+          'display_gallery':true,
+          'styling':true
         });
     });
     </script>

@@ -77,12 +77,12 @@
             data = JSON.parse(data.substr(0, data.length - 1));
             data = data.entry_data.ProfilePage || data.entry_data.TagPage;
             data = data[0].graphql.user || data[0].graphql.hashtag;
-            
+
             if(options.get_data){
                 options.callback(data);
                 return;
-            }   
-                
+            }
+
             //Setting styles
             var styles = {
                 'profile_container': "",
@@ -109,10 +109,10 @@
                     html += "<p class='instagram_tag'"+ styles.profile_name +"><a href='https://www.instagram.com/explore/tags/"+ options.tag +"' rel='noopener' target='_blank'>#"+ options.tag +"</a></p>";
                 else
                     html += "<p class='instagram_username'"+ styles.profile_name +">@"+ data.full_name +" (<a href='https://www.instagram.com/"+ options.username +"' rel='noopener' target='_blank'>@"+options.username+"</a>)</p>";
-        
+
                 if(!is_tag && options.display_biography)
                     html += "<p class='instagram_biography'"+ styles.profile_biography +">"+ data.biography +"</p>";
-        
+
                 html += "</div>";
             }
 
@@ -125,7 +125,7 @@
                 }else{
                     var imgs = (data.edge_owner_to_timeline_media || data.edge_hashtag_to_media).edges;
                         max = (imgs.length > options.items) ? options.items : imgs.length;
-                    
+
                     html += "<div class='instagram_gallery'>";
                     for(var i = 0; i < max; i++){
                         var url = "https://www.instagram.com/p/" + imgs[i].node.shortcode,
@@ -144,7 +144,7 @@
                                 type_resource = "image";
                                 image = imgs[i].node.thumbnail_resources[image_index].src;
                         }
-                        
+
                         if(typeof imgs[i].node.edge_media_to_caption.edges[0] !== "undefined"){
                             caption = imgs[i].node.edge_media_to_caption.edges[0].node.text;
                         }else if(typeof imgs[i].node.accessibility_caption !== "undefined"){
@@ -154,13 +154,13 @@
                         }
 
                         html += "<a href='" + url +"' class='instagram-" + type_resource + "' rel='noopener' target='_blank'>";
-                        html += "<img src='" + image + "' alt='" + escape_string(caption) + "'" + styles.gallery_image +" />";
+                        html += "<img class = 'zoom-image' src='" + image + "' alt='" + escape_string(caption) + "'" + styles.gallery_image +" />";
                         html += "</a>";
                     }
                     html += "</div>";
                 }
             }
-            
+
             if(options.display_igtv && typeof data.edge_felix_video_timeline !== "undefined"){
                 var igtv = data.edge_felix_video_timeline.edges,
                     max = (igtv.length > options.items) ? options.items : igtv.length
@@ -180,5 +180,5 @@
         })
         return true;
     };
-    
+
 })(jQuery);
