@@ -5,6 +5,7 @@
     font-size: 18px;
     min-height: 75px;
   }
+
   .navbar-toggler{
       border: none;
       border-radius: 0;
@@ -24,6 +25,9 @@
     font-weight: bolder;
     color: rgba(100, 130, 235,1);
     min-height: 500px;
+  }
+  #header p{
+      margin-top: 1rem;
   }
   .c2{
 
@@ -45,7 +49,9 @@
     height: 50vh;
     min-height: 0;
 }
-
+.ico {
+    font-size: 5em;
+}
 
   /*Media Queries--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 319.98px) {
@@ -58,7 +64,9 @@
         background-attachment: scroll;
         transition: none;
     }
-
+    .ico {
+        font-size: 3em;
+    }
 }
 
 @media (min-width: 320px) and (max-width: 575.90px) {
@@ -72,6 +80,9 @@
         background-attachment: scroll;
         transition: none;
     }
+    .ico {
+        font-size: 4em;
+    }
 }
 
 @media (min-width: 576px) and (max-width:767.98px) {
@@ -84,6 +95,35 @@
         min-height: 0;
         background-attachment: scroll;
         transition: none;
+    }
+        .ico {
+        font-size: 4em;
+    }
+}
+@media (min-width: 760px) and (max-width:991.98px) {
+    /*Tablets mediantas y grandes*/
+
+    footer {
+        padding: 3em 0 3em 0;
+    }
+    .ico {
+        font-size: 4.5em;
+    }
+}
+
+@media (min-width: 992px) and (max-width:1199.98px) {
+    /*Ordenadores pequeños y tablets PRO*/
+
+    footer {
+        padding: 2em 0 2em 0;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    /*Mayoria de ordenadores grandes*/
+
+    footer {
+        padding: 2em 0 2em 0;
     }
 }
 
