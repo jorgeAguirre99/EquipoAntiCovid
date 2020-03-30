@@ -3,8 +3,46 @@
   <head>
     <meta charset="utf-8">
     <title>EquipoAntiCovid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+    <script src="https://kit.fontawesome.com/6d67b863f5.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   </head>
   <body>
-
+    <header id="header" class="alt fadeIn d-flex align-items-center">
+      <!-- Logo de la empresa -->
+      <!--Menu principal versión ordenador y tablets Ipad/Ipad Pro-->
+      <p class="nombre lefttext fadeInLeft mr-auto p-2">Equipo AntiCovid</p>
+      <div style="margin: -28px;" class="fadeInSlow d-flex justify-content-end p-2">
+          <button class="openbtn" onclick="openNav()"><span class="menu">Menu</span><i class="fas fa-bars"></i></button>
+      </div>
+      <nav class="d-flex justify-content-end">
+          <div class="container">
+              <div id="mySidepanel" class="sidepanel">
+                  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+                  <a href="">|<span class="name optactive js-scroll-trigger">Inicio</span></a>
+                  <a href="es_es/história/index.php" onmouseover="move(this)"
+                  onmouseout="moveback(this)">|<span id="name" class="name">Historia</span></a>
+                  <a href="es_es/contacto/index.php" onmouseover="move(this)"
+                  onmouseout="moveback(this)">|<span id="name" class="name">Contacto</span></a>
+              </div>
+          </div>
+      </nav>
+  </header>
+<br>
   </body>
+  <script src="assets/js/script.js"></script>
+<script src="assets/js/jquery.easing.min.js"></script>
+<script src="assets/js/scrolling-nav.js"></script>
+<script src="assets/js/scroll.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/carousel.js"></script>
+<script src="assets/js/skel.min.js"></script>
+<script src="assets/js/jquery.scrollx.min.js"></script>
 </html>
