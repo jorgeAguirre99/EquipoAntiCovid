@@ -25,23 +25,6 @@
     color: rgba(100, 130, 235,1);
     min-height: 500px;
   }
-  
-  @media (max-width: 575.98px) { 
-      
-      .nomarginleft{
-      
-      margin-left: 0!important;
-  }
-  }
-  
-  @media (min-width: 576px) and (max-width: 767.98px) { 
-      
-      .nomarginleft{
-      
-      margin-left: 0!important;
-  } 
-  }
-  
   .c2{
 
     padding: 5em 0 0 0;
@@ -55,13 +38,69 @@
       background-image: url('../../media/img/2c.jpg');
   }
   .parallaxminor {
-    height: 100%;
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    transition: all .25s ease-in;
     height: 50vh;
     min-height: 0;
 }
+
+
+  /*Media Queries--------------------------------------------------------------------------------------------------------------------*/
+@media screen and (max-width: 319.98px) {
+    /*Teléfonos Pequeños*/
+
+    .parallax {
+        background-attachment: scroll;
+    }
+    .parallaxminor {
+        background-attachment: scroll;
+        transition: none;
+    }
+
+}
+
+@media (min-width: 320px) and (max-width: 575.90px) {
+    /*Iphone 4, Teléfonos Pequeños y Medianos*/
+
+
+    .parallax {
+        background-attachment: scroll;
+    }
+    .parallaxminor {
+        background-attachment: scroll;
+        transition: none;
+    }
+}
+
+@media (min-width: 576px) and (max-width:767.98px) {
+    /*Teléfonos plus, o Tablets Pequeñas */
+
+    .parallax {
+        background-attachment: scroll;
+    }
+    .parallaxminor {
+        min-height: 0;
+        background-attachment: scroll;
+        transition: none;
+    }
+}
+
+  @media (max-width: 575.98px) { 
+      
+      .nomarginleft{
+      
+        margin-left: 0!important;
+        }
+  }
+  
+  @media (min-width: 576px) and (max-width: 767.98px) { 
+      
+      .nomarginleft{
+      
+      margin-left: 0!important;
+        } 
+  }
+  
 
