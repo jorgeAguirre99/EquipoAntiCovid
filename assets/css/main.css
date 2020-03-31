@@ -1,32 +1,44 @@
 
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Poiret+One&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Anton|Lobster|Questrial|Rajdhani:300&display=swap');
+
 #nav {
-    background-color: rgba(100, 130, 235,1);
+    background-color: white;
     font-family: 'Arimo', sans-serif;
+    color:rgba(100, 130, 235,1)!important;
     font-size: 18px;
     min-height: 75px;
   }
 
+
+  .nav-item{
+    color:rgba(100, 130, 235,1)!important;
+  }
+  .num{
+      font-family: Questrial;
+  }
   .navbar-toggler{
       border: none;
       border-radius: 0;
       padding: 8px 18px;
       font-size: 1.5em;
       transition: all .25s ease-in;
+      color: rgba(100, 130, 235,1)!important;
   }
   .navbar-toggler:hover{
       border: none;
-      background-color: white;
-      color:  rgba(100, 130, 235,1);
+      background-color:rgba(100, 130, 235,1);
+      color:  white!important;
       transition: all .25s ease-in;
   }
   #header {
-    background-color: rgba(180, 193, 241,1);
+    background-color: white;
     font-family: 'Arimo', sans-serif;
     font-weight: bolder;
     color: rgba(100, 130, 235,1);
     min-height: 500px;
   }
-  #header p{
+  #modulo1 p{
       margin-top: 1rem;
   }
   .c2{
@@ -52,6 +64,14 @@
 .ico {
     font-size: 5em;
 }
+#modulo1 {
+    background-color: rgba(100, 130, 235,1);
+    font-family: 'Arimo', sans-serif;
+    font-weight: bolder;
+    color: white;
+    padding: 2.5em;
+  }
+
 
   /*Media Queries--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 319.98px) {
@@ -144,3 +164,4 @@
   }
   
 
+  
