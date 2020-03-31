@@ -11,7 +11,6 @@ $(function() {
         console.log('slid at ', event.timeStamp)
     })
 })
-
 /*
 Función Sacada de la Página de Misión País, donde trabajo en conjunto con otros programadores
 Copyright: TelecoTeam
@@ -75,6 +74,63 @@ function esconder(element){
 function mostrar(){
 
 }
+$(document).ready(function() {
+
+    var counters = $(".count");
+    var countersQuantity = counters.length;
+    var counter = [];
+  
+    for (i = 0; i < countersQuantity; i++) {
+      counter[i] = parseInt(counters[i].innerHTML);
+    }
+  
+    var count = function(start, value, id) {
+      var localStart = start;
+      var original = value;
+      setInterval(function() {
+        if (localStart < value) {
+            localStart= localStart+1521;
+            if(localStart < value){
+                counters[id].innerHTML = localStart;
+            }else
+            {
+                var dif = localStart-value;
+                if(dif == 0){
+                    
+                }
+                else if (dif < 0){
+                    if(localStart < original){
+                        localStart++;
+                        counters[id].innerHTML = localStart;
+                    }
+                }
+                else{
+                    counters[id].innerHTML = original;
+                }
+            }
+        }else{
+        var dif = localStart-original;
+        if(dif == 0){
+            
+        }
+        else if (dif < 0){
+            if(localStart < original){
+                localStart++;
+                counters[id].innerHTML = localStart;
+            }
+        }
+        else{
+            counters[id].innerHTML = original;
+        }
+        }
+      }, 40);
+    }
+  
+    for (j = 0; j < countersQuantity; j++) {
+      count(0, counter[j], j);
+    }
+  });
+
 //Menu Móvil-----------------------------------------------------------------------------------------------------------------------
 function openNav() {
     document.getElementById("mySidepanel").style.width = "250px";
@@ -103,6 +159,7 @@ $(function() {
     'use strict';
     //Carga la función en los campos
     window.addEventListener('load', function() {
+        
         //Busca los campos que necesitan validación
         var forms = document.getElementsByClassName('needs-validation'); //Carga el formulario
         //En un bucle no deja que dejen de validarse para ver si están VALIDOS
@@ -121,6 +178,7 @@ $(function() {
 
 //Limitación de palabras en Text Area 300 palabras max--------------------------------------------------------------------
 $(document).ready(function() {
+    counter();
     // Función a lanzar cada vez que se presiona una tecla en un textarea
     // en el que se encuentra el atributo maxlength     
     $("textarea[maxlength]").keyup(function() {

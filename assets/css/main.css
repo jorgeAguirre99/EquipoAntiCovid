@@ -1,6 +1,39 @@
-
+/*Fuentes--------------------------------------------------------------------------------------------------------*/
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400|Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Bebas+Neue|Anton|Lobster|Questrial|Rajdhani:300&display=swap');
+@font-face {
+    font-family: 'HPBold';
+    src:url('../fonts/HPSimplified_Bold.ttf'); 
+}
+@font-face {
+    font-family: 'HPLight';
+    src:url('../fonts/HPSimplified_Light.ttf'); 
+}
+@font-face {
+    font-family: 'HPLightItalic';
+    src:url('../fonts/HPSimplified_LightItalic.ttf'); 
+}
+@font-face {
+    font-family: 'HPRegular';
+    src:url('../fonts/HPSimplified_Regular.ttf'); 
+} 
+@font-face {
+    font-family: 'HPItalic';
+    src:url('../fonts/HPSimplified_Italic.ttf'); 
+}
+@font-face {
+    font-family: 'HPRegular';
+    src:url('../fonts/HPSimplified_Regular.ttf'); 
+} 
+@font-face {
+    font-family: 'HPBoldItalic';
+    src:url('../fonts/HPSimplified_BoldItalic.ttf'); 
+} 
+
+*{
+    font-family: 'HPRegular';
+    
+}
 /*Animaciones Extras---------------------------------------------------------------------------------------------------------------*/
 @-webkit-keyframes pop-in {
     0% { opacity: 0; -webkit-transform: scale(0.9); }
@@ -171,20 +204,6 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
         opacity: 1;
     }
 }
-#nav {
-    background-color: white;
-    font-family: 'Arimo', sans-serif;
-    color:rgba(100, 130, 235,1)!important;
-    font-size: 18px;
-    min-height: 75px;
-  }
-header{
-    position: sticky;
-    top:0;
-    background-color: white;
-    z-index: 10000;
-}
-
   .nav-link{
     color:rgba(100, 130, 235,1)!important;
   }
@@ -207,40 +226,33 @@ header{
     font-family: Bebas Neue;
     letter-spacing: 6px;
   }
+  .hashtag{
+    background-color: rgba(100, 130, 235,1);
+    color: white;
+    border-radius: 0.3rem;
+    padding: 0.5em;
+    font-family: 'HPBold';
+  }
+  .numeros{
 
-  .navbar-toggler{
-      border: none;
-      border-radius: 0;
-      padding: 8px 18px;
-      font-size: 1.5em;
-      transition: all .25s ease-in;
-      color: rgba(100, 130, 235,1)!important;
-  }
-  .navbar-toggler:hover{
-      border: none;
-      background-color:rgba(100, 130, 235,1);
-      color:  white!important;
-      transition: all .25s ease-in;
-  }
-  #header {
-    background-color: white;
-    font-family: 'Arimo', sans-serif;
-    font-weight: bolder;
-    color: rgba(100, 130, 235,1);
-    min-height: 500px;
-  }
-  #modulo1 p{
-      margin-top: 1rem;
+    font-size:5.5em;
+    color: white;
+    font-family: 'Rajdhani';
+
   }
   .c2{
-
-    padding: 5em 0 0 0;
     padding: 0;
   }
+
   .c2 .soft{
         background:#0121987a;
         height: 100%;
   }
+  .c2 .soft .row{
+    margin: 0;
+  }
+  
+
   .img2{
       background-image: url('../../media/img/2c.jpg');
   }
@@ -255,15 +267,6 @@ header{
 .ico {
     font-size: 5em;
 }
-#modulo1 {
-    background-color: rgba(100, 130, 235,1);
-    font-family: 'Arimo', sans-serif;
-    font-weight: bolder;
-    color: white;
-    padding: 2.5em;
-    transition: all .25s ease-in;
-  }
-
 
   /*Media Queries--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 319.98px) {
@@ -278,9 +281,6 @@ header{
     .parallaxminor {
         background-attachment: scroll;
         transition: none;
-    }
-    .ico {
-        font-size: 3em;
     }
 }
 
@@ -298,9 +298,6 @@ header{
         background-attachment: scroll;
         transition: none;
     }
-    .ico {
-        font-size: 4em;
-    }
 }
 
 @media (min-width: 576px) and (max-width:767.98px) {
@@ -317,54 +314,22 @@ header{
         background-attachment: scroll;
         transition: none;
     }
-        .ico {
-        font-size: 4em;
-    }
 }
 @media (min-width: 760px) and (max-width:991.98px) {
     /*Tablets mediantas y grandes*/
     .covid{
         margin-right: 60%;
     }
-    footer {
-        padding: 3em 0 3em 0;
-    }
-    .ico {
-        font-size: 4.5em;
-    }
 }
 
 @media (min-width: 992px) and (max-width:1199.98px) {
     /*Ordenadores pequeños y tablets PRO*/
 
-    footer {
-        padding: 2em 0 2em 0;
-    }
-}
+
 
 @media screen and (min-width: 1200px) {
     /*Mayoria de ordenadores grandes*/
 
-    footer {
-        padding: 2em 0 2em 0;
-    }
 }
-
-  @media (max-width: 575.98px) { 
-      
-      .nomarginleft{
-      
-        margin-left: 0!important;
-        }
-  }
-  
-  @media (min-width: 576px) and (max-width: 767.98px) { 
-      
-      .nomarginleft{
-      
-      margin-left: 0!important;
-        } 
-  }
-  
 
   
