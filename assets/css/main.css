@@ -194,6 +194,20 @@ header{
     color: rgba(100, 130, 235,1);
     margin-bottom: 45px;
   }
+  .covid{
+    background-color: white;
+    color: rgba(100, 130, 235,1)!important;
+    font-size: 3.5em;
+    margin-right: 70%;
+    width: 0 auto;
+    text-align: center;
+    padding: 16px;
+    margin-top: 50px;
+    margin-left: 6%;
+    font-family: Bebas Neue;
+    letter-spacing: 6px;
+  }
+
   .navbar-toggler{
       border: none;
       border-radius: 0;
@@ -254,7 +268,10 @@ header{
   /*Media Queries--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 319.98px) {
     /*Teléfonos Pequeños*/
-
+    .covid{
+        margin-left: 0%;
+        margin-right: 0%;
+    }
     .parallax {
         background-attachment: scroll;
     }
@@ -269,7 +286,10 @@ header{
 
 @media (min-width: 320px) and (max-width: 575.90px) {
     /*Iphone 4, Teléfonos Pequeños y Medianos*/
-
+    .covid{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
 
     .parallax {
         background-attachment: scroll;
@@ -285,7 +305,10 @@ header{
 
 @media (min-width: 576px) and (max-width:767.98px) {
     /*Teléfonos plus, o Tablets Pequeñas */
-
+    .covid{
+        margin-left: 8%;
+        margin-right: 8%;
+    }
     .parallax {
         background-attachment: scroll;
     }
@@ -300,7 +323,9 @@ header{
 }
 @media (min-width: 760px) and (max-width:991.98px) {
     /*Tablets mediantas y grandes*/
-
+    .covid{
+        margin-right: 60%;
+    }
     footer {
         padding: 3em 0 3em 0;
     }
