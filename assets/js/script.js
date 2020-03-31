@@ -74,7 +74,7 @@ function esconder(element){
 function mostrar(){
 
 }
-$(document).ready(function() {
+var fun = $(function() {
 
     var counters = $(".count");
     var countersQuantity = counters.length;
@@ -87,6 +87,9 @@ $(document).ready(function() {
     var count = function(start, value, id) {
       var localStart = start;
       var original = value;
+      if (value > 200000){
+          localStart = value-100000;
+      }
       setInterval(function() {
         if (localStart < value) {
             localStart= localStart+1521;
@@ -95,8 +98,10 @@ $(document).ready(function() {
             }else
             {
                 var dif = localStart-value;
-                if(dif == 0){
-                    
+                alert(dif + "hola" + localStart + "holaas" + value);
+                if(dif == 0 || counters[id].innerHTML == original) {
+                    $(fun).finish();
+                    alert('holaasd' + localStart);
                 }
                 else if (dif < 0){
                     if(localStart < original){
@@ -110,7 +115,9 @@ $(document).ready(function() {
             }
         }else{
         var dif = localStart-original;
+        alert(dif + "hola" + localStart + '\n' + original);
         if(dif == 0){
+            $(fun).finish();
             
         }
         else if (dif < 0){
@@ -127,9 +134,11 @@ $(document).ready(function() {
     }
   
     for (j = 0; j < countersQuantity; j++) {
-      count(0, counter[j], j);
+        count(0, counter[j], j);
     }
-  });
+});
+
+
 
 //Menu Móvil-----------------------------------------------------------------------------------------------------------------------
 function openNav() {
@@ -178,7 +187,6 @@ $(function() {
 
 //Limitación de palabras en Text Area 300 palabras max--------------------------------------------------------------------
 $(document).ready(function() {
-    counter();
     // Función a lanzar cada vez que se presiona una tecla en un textarea
     // en el que se encuentra el atributo maxlength     
     $("textarea[maxlength]").keyup(function() {

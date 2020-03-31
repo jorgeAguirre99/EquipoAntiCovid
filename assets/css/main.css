@@ -238,18 +238,28 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     font-size:5.5em;
     color: white;
     font-family: 'Rajdhani';
+    
 
   }
   .c2{
     padding: 0;
   }
-
+    .plus{
+        vertical-align: text-top;
+        color:lime;
+    }
   .c2 .soft{
         background:#0121987a;
         height: 100%;
   }
   .c2 .soft .row{
     margin: 0;
+    text-align: center;
+  }
+  .c2 .soft .row p{
+    color: white;
+    font-size: 1.5em;
+    text-transform: uppercase;
   }
   
 
@@ -264,9 +274,7 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     height: 50vh;
     min-height: 0;
 }
-.ico {
-    font-size: 5em;
-}
+
 
   /*Media Queries--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 319.98px) {
@@ -281,6 +289,13 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     .parallaxminor {
         background-attachment: scroll;
         transition: none;
+    }
+    .numeros{
+
+        font-size:3em;
+    }
+    .parallaxminor{
+        height: 70vh;
     }
 }
 
@@ -298,6 +313,13 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
         background-attachment: scroll;
         transition: none;
     }
+    .numeros{
+
+        font-size:3.5em;
+    }
+    .parallaxminor{
+        height: 70vh;
+    }
 }
 
 @media (min-width: 576px) and (max-width:767.98px) {
@@ -314,11 +336,22 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
         background-attachment: scroll;
         transition: none;
     }
+    .numeros{
+
+        font-size:4em;
+    }
+    .parallaxminor{
+        height: 70vh;
+    }
 }
 @media (min-width: 760px) and (max-width:991.98px) {
     /*Tablets mediantas y grandes*/
     .covid{
         margin-right: 60%;
+    }
+    .numeros{
+
+        font-size:4.5em;
     }
 }
 
