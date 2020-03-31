@@ -4,13 +4,12 @@
 <head>
   <meta charset="utf-8">
   <title>EquipoAntiCovid</title>
-</head>
-
-<body>
   <!--BOOTSTRAP CSS -->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="assets/css/main.css">
+  <link rel="stylesheet" href="assets/css/anim.css">
   <script src="https://kit.fontawesome.com/d2b8efb2df.js" crossorigin="anonymous"></script>
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
   <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   </head>
@@ -36,6 +35,8 @@
         }
       });
     </script>
+    <!--HEADER-->
+    <header>
     <nav id="nav" class="navbar navbar-expand-md navbar-dark">
       <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
         <ul class="navbar-nav mr-auto">
@@ -48,7 +49,7 @@
         </ul>
       </div>
       <div class="mx-auto order-0 d-flex justify-content-center" style="width: 100%;">
-        <a class="navbar-brand mx-auto d-flex justify-content-center nomarginleft"  href="#">
+        <a class="navbar-brand mx-auto d-flex justify-content-center nomarginleft js-scroll-trigger"  href="#">
           <img src="media/img/logo.png" height="40px"></a>
         <div class="d-flex justify-content-end align-self-center" style="clear: both;float: right;">
         <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target=".dual-collapse2">
@@ -62,13 +63,12 @@
             <a class="nav-link" href="public/contacto.html">Contacto</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-warning" style="background-color: #fddb3a; border-color:#fddb3a" type="button">Contribuir</button>
+            <button class="btn btn-warning js-scroll-trigger" style="background-color: #fddb3a; border-color:#fddb3a" type="button">Contribuir</button>
           </li>
         </ul>
       </div>
     </nav>
-
-    <!--HEADER-->
+    </header>
     <div id="header" class="container-fluid text-center">
       <div class="row" style="min-height: 450px">
         <div class="col align-self-center justify-content-center">
@@ -77,22 +77,22 @@
       </div>
         <div class="row" style="min-height: 100px">
           <div class="col align-self-center justify-content-center">
-            <a href="#modulo1" class="btn btn-warning btn-lg" style="background-color: #fddb3a; border-color:#fddb3a" type="button">Como puedes ayudarnos</a>
+            <a href="#modulo1" class="btn btn-warning btn-lg js-scroll-trigger" style="background-color: #fddb3a; border-color:#fddb3a" type="button">Como puedes ayudarnos</a>
           </div>
         </div>
     </div>
     <div id="modulo1" name="modulo1" class="container-fluid text-center">
       <h4 class="mt-5">
         <div class="row">
-          <div class="col-md-4">
+          <div class="col-lg-4 FadeLeft">
             <h1 class="ico num">1</h1><i class="ico fas fa-heart"></i>
             <p>Siguenos y comparte en tus redes sociales</p>
           </div> 
-          <div class="col-md-4">
+          <div class="col-lg-4 slideanim">
             <h1 class="ico num">2</h1><i class="ico fas fa-hand-holding-medical"></i>
             <p>Dona materiales para la creación de viseras</p>
           </div>  
-          <div class="col-md-4">
+          <div class="col-lg-4 FadeRight">
             <h1 class="ico num">3</h1><i class="ico fas fa-map-marker-alt"></i>
             <p>Ayudanos a encontrar proveedores que donen material</p></div>
           </div>
@@ -108,14 +108,11 @@
     
     <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
     <script src="assets/js/script.js"></script>
+    <script src="assets/js/anim.js"></script>
     <script src="assets/js/jquery.easing.min.js"></script>
     <script src="assets/js/scrolling-nav.js"></script>
     <script src="assets/js/scroll.js"></script>
-    <script src="assets/js/util.js"></script>
-    <script src="assets/js/carousel.js"></script>
-    <script src="assets/js/skel.min.js"></script>
-    <script src="assets/js/jquery.scrollx.min.js"></script>
-    
+    <script src="assets/js/jquery.scrollx.min.js"></script>    
     <script src="js/form.js"></script>
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
