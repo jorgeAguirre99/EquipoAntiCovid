@@ -98,10 +98,8 @@ var fun = $(function() {
             }else
             {
                 var dif = localStart-value;
-                alert(dif + "hola" + localStart + "holaas" + value);
+                
                 if(dif == 0 || counters[id].innerHTML == original) {
-                    $(fun).finish();
-                    alert('holaasd' + localStart);
                 }
                 else if (dif < 0){
                     if(localStart < original){
@@ -115,7 +113,7 @@ var fun = $(function() {
             }
         }else{
         var dif = localStart-original;
-        alert(dif + "hola" + localStart + '\n' + original);
+        
         if(dif == 0){
             $(fun).finish();
             

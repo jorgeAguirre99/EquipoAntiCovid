@@ -231,7 +231,10 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     color: white;
     border-radius: 0.3rem;
     padding: 0.5em;
-    font-family: 'HPBold';
+    text-transform: none;
+    font-size: 1.2em;
+    letter-spacing: 0!important;
+    font-family: 'HPBold'!important;
   }
   .numeros{
 
@@ -266,7 +269,16 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
   .img2{
       background-image: url('../../media/img/2c.jpg');
   }
-  .parallaxminor {
+  .img3{
+    background-image: url('../../media/img/3c.jpg');
+    }  
+    .img4{
+        background-image: url('../../media/img/4c.jpg');
+        }
+        .img5{
+            background-image: url('../../media/img/5c.jpg');
+            }  
+.parallaxminor {
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -274,9 +286,126 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     height: 50vh;
     min-height: 0;
 }
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 0;
+}
 
+.empresas .titulo{
+    margin: 0;
+    font-size: 3.5em;
+}
+  
+/*Footer--------------------------------------------------------------------------------------------------------------------*/                                   
+/* Footer */
 
-  /*Media Queries--------------------------------------------------------------------------------------------------------------------*/
+	footer {
+		padding: 8em 0 6em 0 ;
+	    background: #fffffff2;
+        text-align: center;
+        display: block;
+    }
+    .empresas{
+            padding: 3em 1em 3em 1em ;
+            background: #ffffff87;
+            text-align: center;
+            display: block;
+
+    }
+
+		footer .icons {
+            font-size: 1.25em;
+            text-align: center;
+		}
+
+			footer .icons a {
+				color: white;
+                background: #ffc107;
+                text-transform: none;
+                padding: 10px;
+                transition: all .25s ease;
+                border-radius: 0.4em;
+                text-decoration: none;
+			}
+
+				footer .icons a:hover {
+                    color: #ffc107;
+                    transition: all .25s ease;
+                    background: white;
+                    text-transform: none;
+                    text-decoration: none;
+				}
+
+		footer .copyright {
+			color: black;
+			font-size: 0.8em;
+			letter-spacing: 0.225em;
+			list-style: none;
+            text-align: center;
+			text-transform: uppercase;
+		}
+
+			footer li {
+				
+				display: inline;
+                line-height: 1.5em;
+                padding: 0.5em;
+            }
+            footer ul{
+                margin-bottom: 1.5rem!important;
+            }
+
+				footer li:first-child {
+					border-left: 0;
+					margin-left: 0;
+					padding-left: 0;
+				}
+
+				footer .copyright li a {
+					color: inherit;
+				}
+
+					footer .copyright li a:hover {
+						color: black;
+                    }
+                .copyright span{
+                    margin-right: 0.5em;
+                    margin-left: 0.5em;
+                }
+                                      
+
+				@media screen and (max-width: 480px) {
+
+					footer  li {
+						border: 0;
+						display: block;
+						line-height: 1.65em;
+						margin: 0;
+						padding: 0.8em 0;
+					}
+
+				}
+
+		@media screen and (max-width: 980px) {
+
+			footer {
+				padding: 4em 3em 2em 3em ;
+			}
+
+		}
+
+		@media screen and (max-width: 736px) {
+
+			footer {
+				padding: 3em 2em 1em 2em ;
+			}
+
+		}                    
+
+/*Media Queries--------------------------------------------------------------------------------------------------------------------*/
 @media screen and (max-width: 319.98px) {
     /*Teléfonos Pequeños*/
     .covid{
@@ -296,6 +425,9 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     }
     .parallaxminor{
         height: 70vh;
+    }
+    .punt{
+        visibility: hidden;
     }
 }
 
@@ -320,6 +452,9 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     .parallaxminor{
         height: 70vh;
     }
+    .punt{
+        visibility: hidden;
+    }
 }
 
 @media (min-width: 576px) and (max-width:767.98px) {
@@ -343,6 +478,9 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     .parallaxminor{
         height: 70vh;
     }
+    .punt{
+        visibility: hidden;
+    }
 }
 @media (min-width: 760px) and (max-width:991.98px) {
     /*Tablets mediantas y grandes*/
@@ -353,16 +491,24 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
 
         font-size:4.5em;
     }
+    .punt{
+        visibility: visible;
+    }
 }
 
 @media (min-width: 992px) and (max-width:1199.98px) {
     /*Ordenadores pequeños y tablets PRO*/
-
-
+.punt{
+    visibility: visible;
+}
+}
 
 @media screen and (min-width: 1200px) {
     /*Mayoria de ordenadores grandes*/
 
+.punt{
+    visibility: visible;
+}
 }
 
   
