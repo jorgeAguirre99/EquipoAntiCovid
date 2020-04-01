@@ -247,6 +247,9 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
   .c2{
     padding: 0;
   }
+  .c3{
+    padding: 0;
+  }
     .plus{
         vertical-align: text-top;
         color:lime;
@@ -264,8 +267,17 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     font-size: 1.5em;
     text-transform: uppercase;
   }
-  
-
+  .fuente{
+      float: right;
+      color: white;
+  }
+  .empresas .logo{
+    width: 12em;
+    height: 12em;
+  }
+  .empresas .row{
+      padding: 3.5em;
+  }
   .img2{
       background-image: url('../../media/img/2c.jpg');
   }
