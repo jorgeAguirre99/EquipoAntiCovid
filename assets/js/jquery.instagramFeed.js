@@ -155,7 +155,7 @@
                         if(i == 3){
                           html+="</div><div class='row d-flex justify-content-center'>";
                         }
-                        html += "<div class = 'card col-md-3 mx-2 my-2'><a href='" + url +"' class='instagram-" + type_resource + "' rel='noopener' target='_blank'>";
+                        html += "<div class = 'card col-md-3 mx-2 my-2' style='background-color:black;'><a href='" + url +"' class='instagram-" + type_resource + "' rel='noopener' target='_blank'>";
                         html += "<img class = 'zoom-image card-img-top' src='" + image + "' alt='" + escape_string(caption) + "'" + styles.gallery_image +" />";
                         html += "</a><div class = 'card-body'><p>"+escape_string(caption)+"</p></div></div>";
                     }
