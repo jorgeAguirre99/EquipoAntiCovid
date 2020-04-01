@@ -17,41 +17,6 @@ Copyright: TelecoTeam
 Mision Pais España, misionpais.es
 Modified by: Mathias Moser
 */
-//Responsable por ocultar el header en la página principal-----------------------------------------------------------------------------------------------------------------------
-$(function() {
-    skel.breakpoints({
-        xlarge: '(max-width: 1680px)',
-        large: '(max-width: 1280px)',
-        medium: '(max-width: 980px)',
-        small: '(max-width: 736px)',
-        xsmall: '(max-width: 480px)'
-    });
-    $(function() {
-        var $window = $(window),
-            $body = $('body'),
-            $wrapper = $('#page-wrapper'),
-            $banner = $('#banner'),
-            $header = $('#header');
-        if (skel.vars.IEVersion < 9) $header.removeClass('alt');
-        if ($banner.length > 0 && $header.hasClass('alt')) {
-            $window.on('resize', function() {
-                $window.trigger('scroll');
-            });
-            $banner.scrollex({
-                bottom: $header.outerHeight() + 1,
-                terminate: function() {
-                    $header.removeClass('alt');
-                },
-                enter: function() {
-                    $header.addClass('alt');
-                },
-                leave: function() {
-                    $header.removeClass('alt');
-                }
-            });
-        }
-    });
-});
 //Subir y Bajar la fecha del Saber Más-----------------------------------------------------------------------------------------------------------------------
 function bajar() {
     var obj = document.getElementById("imag");
