@@ -28,6 +28,21 @@ $(document).ready(function() {
             var winTop = $(window).scrollTop();
             if (pos < winTop + 650) {
                 $(this).addClass("fadeInLeft");
+                
+            }
+        });
+    });
+});
+
+$(document).ready(function() {
+    $(window).scroll(function() {
+        $(".counter").each(function() {
+            var pos = $(this).offset().top;
+            var winTop = $(window).scrollTop();
+            if (pos < winTop + 650) {
+                $(this).removeClass(".zero");
+                $(this).innerHTML = $(this).attr("data-count")
+                $(this).addClass(".count");
             }
         });
     });

@@ -41,13 +41,13 @@ function mostrar(){
 }
 var fun = $(function() {
 
-    $(window).scroll(function() {
         var counters = $(".count");
         var countersQuantity = counters.length;
         var counter = [];
+        var counters = 
     
         for (i = 0; i < countersQuantity; i++) {
-        counter[i] = parseInt(counters[i].innerHTML);
+        counter[i] = parseInt(counters[i].attr('data-counter'));
         }
     
         var count = function(start, value, id) {
@@ -100,7 +100,7 @@ var fun = $(function() {
         for (j = 0; j < countersQuantity; j++) {
             count(0, counter[j], j);
         }       
-    });
+
 });
 
 
