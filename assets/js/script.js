@@ -44,7 +44,6 @@ var fun = $(function() {
         var counters = $(".count");
         var countersQuantity = counters.length;
         var counter = [];
-        var counters = 
     
         for (i = 0; i < countersQuantity; i++) {
         counter[i] = parseInt(counters[i].attr('data-counter'));
