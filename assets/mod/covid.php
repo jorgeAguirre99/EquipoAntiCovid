@@ -1,4 +1,5 @@
 <?php
+        $fechaactual = date("d/m/Y");
         $hoy = date("d/m/Y",strtotime($fechaactual."- 1 days"));
         $today = date("Y-m-d");
         $sql1 = "SELECT SUM(`COL 3`) INFECTADOSES FROM `covid` where `COL 2` = '$hoy'";

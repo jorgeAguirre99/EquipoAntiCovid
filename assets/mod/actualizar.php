@@ -3,6 +3,9 @@
 $url = 'https://covid.ourworldindata.org/data/ecdc/total_cases.csv';
 $source = file_get_contents($url);
 file_put_contents('media/inc/total_cases.csv', $source);
+$url2 = 'https://covid.ourworldindata.org/data/ecdc/total_cases.csv';
+$source2 = file_get_contents($url2);
+file_put_contents('media/inc/total_cases.csv', $source2);
 include('connect.php');
 
 
