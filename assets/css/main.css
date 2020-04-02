@@ -589,7 +589,7 @@ img.float-left.ml-3 {
 
 			footer .icons a {
 				color: white;
-                background: #ffc107;
+                background: #fddb3a;
                 text-transform: none;
                 padding: 10px;
                 transition: all .25s ease;
@@ -598,7 +598,7 @@ img.float-left.ml-3 {
 			}
 
 				footer .icons a:hover {
-                    color: #ffc107;
+                    color: #fddb3a;
                     transition: all .25s ease;
                     background: white;
                     text-transform: none;

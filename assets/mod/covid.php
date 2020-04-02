@@ -1,10 +1,15 @@
 <?php
-        $fechaactual = date("d/m/Y");
-        $hoy = date("d/m/Y",strtotime($fechaactual."- 1 days"));
+        $fecha = date("d/m/Y");
+        //No toqueis este codigo, es sagrado, inutil pero sagrado-----------
+        $fecha_partida = explode("/",$fecha);        
+        $fecha_americana = $fecha_partida[1] ."/". $fecha_partida[0] ."/" . $fecha_partida[2];
+        $fecha_1 = strtotime($fecha_americana."-1 days");
+        $fecha_1 = date("d/m/Y",$fecha_1);
+        //------------------------------------------------------------------
         $today = date("Y-m-d");
-        $sql1 = "SELECT SUM(`COL 3`) INFECTADOSES FROM `covid` where `COL 2` = '$hoy'";
-        $sql2 = "SELECT SUM(`COL 7`) RECUPERADOSES FROM `covid` where `COL 2` = '$hoy'";
-        $sql3 = "SELECT `COL 2` INFECTADOSMUNDO FROM `total_cases` where `COL 1` = '$today'";
+        $sql1 = "SELECT SUM(`COL 3`) AS INFECTADOSES FROM `covid` where `COL 2` = '$fecha_1';";
+        $sql2 = "SELECT SUM(`COL 7`) AS RECUPERADOSES FROM `covid` where `COL 2` = '$fecha_1';";
+        $sql3 = "SELECT `COL 2` AS INFECTADOSMUNDO FROM `total_cases` where `COL 1` = '$today';";
         $result = $conexion->query($sql1);
         $row =  $result->fetch_object();
         $infectes = $row->INFECTADOSES;
