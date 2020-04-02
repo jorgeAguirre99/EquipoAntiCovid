@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
 <?php 
-        require_once 'assets/mod/class.Mision.php';
-        $covid = new Mision();
-        $covidCond['return_type'] = 'all';
-        $voviddata = $covid->getRows($covidCond);
+        include('assets/mod/connect.php');
+        include('assets/mod/covid.php');
 ?>
 <head>
   <meta charset="utf-8">
@@ -186,15 +184,15 @@
       <p class="covid">Covid-19</p>
       <div class="row d-flex justify-content-center">
         <div class="col-md-4">
-            <span class="numeros counter FadeLeft" data-count="926030">926030</span><!--Total infectados global-->
+            <span class="numeros counter FadeLeft" data-count="<?php echo $infectados ?>"><?php echo $infectados ?></span><!--Total infectados global-->
             <p>Infectados en el Mundo</p>
         </div>
         <div class="col-md-4">
-          <span class="numeros counter slideanim" data-count="104118">104118</span><!--Total en españa-->
+          <span class="numeros counter slideanim" data-count="<?php echo $infectes ?>"><?php echo $infectes ?></span><!--Total en españa-->
           <p>Infectados en España</p>
         </div>
         <div class="col-md-4">
-          <span class="numeros counter FadeRight" style="color:lime" data-count="22647">22647</span><span class="plus">+</span><!--Total curados en españa-->
+          <span class="numeros counter FadeRight" style="color:lime" data-count="<?php echo $recues ?>"><?php echo $recues ?></span><span class="plus">+</span><!--Total curados en españa-->
           <p>Recuperados en España</p>
         </div>
       </div>
