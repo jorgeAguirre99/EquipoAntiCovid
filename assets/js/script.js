@@ -39,68 +39,6 @@ function esconder(element){
 function mostrar(){
 
 }
-var fun = $(function() {
-
-        var counters = $(".count");
-        var countersQuantity = counters.length;
-        var counter = [];
-    
-        for (i = 0; i < countersQuantity; i++) {
-        counter[i] = parseInt(counters[i].attr('data-counter'));
-        }
-    
-        var count = function(start, value, id) {
-        var localStart = start;
-        var original = value;
-        if (value > 200000){
-            localStart = value-100000;
-        }
-        setInterval(function() {
-            if (localStart < value) {
-                localStart= localStart+1521;
-                if(localStart < value){
-                    counters[id].innerHTML = localStart;
-                }else
-                {
-                    var dif = localStart-value;
-                    
-                    if(dif == 0 || counters[id].innerHTML == original) {
-                    }
-                    else if (dif < 0){
-                        if(localStart < original){
-                            localStart++;
-                            counters[id].innerHTML = localStart;
-                        }
-                    }
-                    else{
-                        counters[id].innerHTML = original;
-                    }
-                }
-            }else{
-            var dif = localStart-original;
-            
-            if(dif == 0){
-                $(fun).finish();
-                
-            }
-            else if (dif < 0){
-                if(localStart < original){
-                    localStart++;
-                    counters[id].innerHTML = localStart;
-                }
-            }
-            else{
-                counters[id].innerHTML = original;
-            }
-            }
-        }, 40);
-        }
-    
-        for (j = 0; j < countersQuantity; j++) {
-            count(0, counter[j], j);
-        }       
-
-});
 
 
 
