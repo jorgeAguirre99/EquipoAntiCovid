@@ -214,35 +214,8 @@
        });
    });
   </script>
-<div id="modulo3" class="container-fluid ">
-<div class="row ml-3" style="min-height: 50px; width: 110px; border-bottom:solid 3px white;">
-</div>
-<div class="row" style="min-height: 50px;">
-<div class="col-12 col-md-6">
-<div class="row m-3">
-<img class="ml-5" src="media/img/comentario.png" height="55px">
-</div>
-<div class="row">
-<div class="col-12">
-<form class="mx-3 mt-5" method = "post" action = "./assets/mod/GuardarComentario.php">
-<div class="form-group">
-<label>Nombre</label>
-<input type="text" class="form-control" placeholder="Nombre" name ="nombre"required = "true">
-</div>
-<div class="form-group">
-<label for="exampleFormControlTextarea1">Comentarios</label>
-<textarea class="form-control" rows="3" name="comentario" required = "true"></textarea>
-</div>
-<button type="submit" class="btn btn-primary" style="background-color: #fddb3a; border-color:#fddb3a">Enviar Comentario</button>
-</form>
-</div>
-</div>
-</div>
-<div class="col-12 col-md-6 my-5">
-<?PHP include("./assets/mod/LeerComentarios.php") ?>
-</div>
-</div>
-</div>
+  
+
   <div class="c3 container-fluid parallax img4">
 
     <div class="empresas">
@@ -274,6 +247,36 @@
         </div>
       </div>
     </div>
+    <div id="modulo3" class="container-fluid ">
+  <div class="row ml-3" style="min-height: 50px; width: 110px; border-bottom:solid 3px white;">
+  </div>
+  <div class="row" style="min-height: 50px;">
+  <div class="col-12 col-md-6">
+  <div class="row m-3">
+  <img class="ml-5" src="media/img/comentario.png" height="55px">
+  </div>
+  <div class="row">
+  <div class="col-12">
+  <form class="mx-3 mt-5" method = "post" action = "assets/mod/GuardarComentario.php">
+  <div class="form-group">
+  <label>Nombre</label>
+  <input type="text" class="form-control" placeholder="Nombre" name ="nombre"required = "true">
+  </div>
+  <div class="form-group">
+  <label for="exampleFormControlTextarea1">Comentarios</label>
+  <textarea class="form-control" rows="3" name="comentario" required = "true"></textarea>
+  </div>
+  <button type="submit" class="btn btn-primary" style="background-color: #fddb3a; border-color:#fddb3a">Enviar Comentario</button>
+  </form>
+  </div>
+  </div>
+  </div>
+  <div class="col-12 col-md-6 my-5">
+  <?PHP include("./assets/mod/LeerComentarios.php") ?>
+  </div>
+  </div>
+  
+</div>
     <footer id="footer">
       <ul class="copyright">
         <li>Contacto: <a href="mailto:equipoanticovid@gmail.com">equipoanticovid@gmail.com</a></li>
