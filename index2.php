@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-
+<?php 
+        require_once 'assets/mod/class.Mision.php';
+        $covid = new Mision();
+        $covidCond['return_type'] = 'all';
+        $voviddata = $covid->getRows($covidCond);
+?>
 <head>
   <meta charset="utf-8">
   <title>EquipoAntiCovid</title>
