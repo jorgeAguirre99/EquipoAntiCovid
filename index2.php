@@ -15,10 +15,10 @@
   <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   <script src="assets/js/jquery.instagramFeed.js" type="text/javascript"></script>
-
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 </head>
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  
   <!--HEADER-->
   <header>
     <nav id="nav" class="navbar navbar-expand-md navbar-dark">
@@ -152,7 +152,7 @@
         <i class="cuadroizqder fas fa-angle-right"></i>
         <div class="inner-modulo2">
         <img class=" ml-3" src="media/img/4.png" height="70px">
-        <p class="mt-2 ml-3">MONTAJE</p>
+        <p class="mt-2 ml-3">MONTAJE DE PARTES</p>
       </div>
       <i class="cuadroderizq fas fa-angle-right"></i>
       <i class="cuadroder fas fa-angle-right"></i>
@@ -172,7 +172,7 @@
         <i class="cuadroizqder fas fa-angle-right"></i>
         <div class="inner-modulo2">
         <img class=" ml-3" src="media/img/6.png" height="70px">
-        <p class="mt-2 ml-3">REPARTO</p>
+        <p class="mt-2 ml-3">REPARTO A HOSPITALES</p>
                 </div>
         <i class="cuadroderizq fas fa-angle-right"></i>
         <i class="cuadroder fas fa-angle-right"></i>
@@ -263,14 +263,21 @@
   <form class="mx-3 mt-5" method = "post" action = "assets/mod/GuardarComentario.php">
   <div class="form-group">
   <label>Nombre</label>
-  <input type="text" class="form-control" placeholder="Nombre" name ="nombre"required = "true">
+  <input type="text" class="form-control" placeholder="Nombre" name ="nombre" required = "true">
   </div>
   <div class="form-group">
   <label for="exampleFormControlTextarea1">Comentarios</label>
-  <textarea class="form-control" rows="3" name="comentario" required = "true"></textarea>
+  <textarea class="form-control" rows="3" name="comentario" placeholder="Comentario" required = "true"></textarea>
   </div>
   <button type="submit" class="btn btn-primary" style="background-color: #fddb3a; border-color:#fddb3a">Enviar Comentario</button>
   </form>
+  <?php
+                        if($_SERVER['REQUEST_URI'] == '/Web%20Equipo%20Anti-Covid/EquipoAntiCovid/index2.php?sended'){
+                            echo '<div class="PopIn" style="color:#5aff5a; font-size: 0.9em;text-align:center"><p><br>El comentario ha sido enviado correctamente! Muchas Gracias!</p></div>';
+                        }else if($_SERVER['REQUEST_URI'] == '/Web%20Equipo%20Anti-Covid/EquipoAntiCovid/index2.php?fail'){
+                            echo '<div class="PopIn" style="color:red; font-size: 0.9em;text-align:center"><p><br>No ha sido posible enviar tu comentario...</p></div>';
+                        }
+  ?>
   </div>
   </div>
   </div>

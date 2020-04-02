@@ -318,10 +318,8 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
 #modulo3 {
   background-color: rgba(133, 156, 239, 0.94);
   font-family: 'Arimo', sans-serif;
-  font-weight: bolder;
   color: white;
   font-size: 18px;
-  font-weight: bolder;
   transition: all .25s ease-in;
   min-height: 450px;
 }
@@ -355,7 +353,6 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
   font-weight: bolder;
   color: white;
   font-size: 18px;
-  font-weight: bolder;
   transition: all .25s ease-in;
   min-height: 450px;
 }
