@@ -34,6 +34,9 @@
     font-family: 'HPRegular';
     
 }
+body, html {
+  height: 100%;
+}
 /*Animaciones Extras---------------------------------------------------------------------------------------------------------------*/
 @-webkit-keyframes pop-in {
   0% {
@@ -424,6 +427,9 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     font-family: 'Rajdhani';
     font-weight: 300;
 
+  }
+  #page-wrapper{
+    padding: 0!important;
   }
   .c0{
       padding: 0;

@@ -20,5 +20,4 @@
         $result2 = $conexion->query($sql3);
         $row2 =  $result2->fetch_object();
         $infectados = $row2->INFECTADOSMUNDO;
-        echo $infectados
 ?>
