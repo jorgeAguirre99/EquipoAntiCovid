@@ -1,4 +1,5 @@
 <?php
+        include('connect.php');
         $fecha = date("d/m/Y");
         //No toqueis este codigo, es sagrado, inutil pero sagrado-----------
         $fecha_partida = explode("/",$fecha);        
@@ -19,4 +20,5 @@
         $result2 = $conexion->query($sql3);
         $row2 =  $result2->fetch_object();
         $infectados = $row2->INFECTADOSMUNDO;
+        echo $infectados
 ?>
