@@ -274,9 +274,9 @@
   <button type="submit" class="btn btn-primary" style="background-color: #fddb3a; border-color:#fddb3a">Enviar Comentario</button>
   </form>
   <?php
-                        if($_SERVER['REQUEST_URI'] == '/Web%20Equipo%20Anti-Covid/EquipoAntiCovid/index2.php?sended'){
+                        if($_SERVER['REQUEST_URI'] == 'proyectos/index2.php?sended'){
                             echo '<div class="PopIn" style="color:#5aff5a; font-size: 0.9em;text-align:center"><p><br>El comentario ha sido enviado correctamente! Muchas Gracias!</p></div>';
-                        }else if($_SERVER['REQUEST_URI'] == '/Web%20Equipo%20Anti-Covid/EquipoAntiCovid/index2.php?fail'){
+                        }else if($_SERVER['REQUEST_URI'] == 'proyectos/index2.php?fail'){
                             echo '<div class="PopIn" style="color:red; font-size: 0.9em;text-align:center"><p><br>No ha sido posible enviar tu comentario...</p></div>';
                         }
   ?>
@@ -285,6 +285,7 @@
   </div>
   <div class="col-12 col-md-6 my-5">
   <?PHP include("./assets/mod/LeerComentarios.php") ?>
+  </div>
   </div>
   </div>
     <footer id="footer">
