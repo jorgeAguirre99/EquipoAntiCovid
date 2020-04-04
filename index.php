@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
 <?php 
-        include('assets/mod/connect.php');
+        include('assets/mod/actualizar.php');
         include('assets/mod/covid.php');
 ?>
 <head>

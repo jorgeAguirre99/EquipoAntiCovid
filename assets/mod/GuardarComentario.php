@@ -4,7 +4,7 @@
     $comentario = $_POST["comentario"];
     $sql = "insert into Comentarios values('$nombre','$comentario',SYSDATE())";
     $result = $conexion->query($sql);
-    header("Location:../../index2.php");
+    header("Location:../../index.php");
     ?>
 
 
