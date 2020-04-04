@@ -8,13 +8,13 @@
   <meta charset="utf-8">
   <title>EquipoAntiCovid</title>
   <!--BOOTSTRAP CSS -->
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/css/main.css">
   <script src="https://kit.fontawesome.com/d2b8efb2df.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
   <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   <script src="assets/js/jquery.instagramFeed.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="assets/css/main.css">
 
 </head>
 <body>
@@ -28,7 +28,7 @@
             <a class="nav-link" href="#">Inicio</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="public/historia.html">Nosotros</a>
+            <a class="nav-link" href="public/nosotros.php">Nosotros</a>
           </li>
         </ul>
       </div>
@@ -43,11 +43,11 @@
       </div>
       <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item">
-            <a class="nav-link" href="public/contacto.html">Contacto</a>
+          <li class="nav-item display: flex; margin-right: 3px;align-items: center;">
+            <a class="nav-link" href="public/contacto.php">Contacto</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-lg btn-warning" style="background-color: #fddb3a; border-color: #fddb3a; color: white" type="button">Contribuir</button>
+            <button class="btn btn-lg" style="background-color: #fddb3a; color: white" type="button">Contribuir</button>
           </li>
         </ul>
       </div>

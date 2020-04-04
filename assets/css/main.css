@@ -252,16 +252,27 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
   }
 }
 /*Codigo Página -----------------------------------------------------------------------------------------*/
+.item-image{
 
+  filter: grayscale(1);
+
+}
     header{
     position: sticky;
     top:0;
     background-color: white;
     z-index: 10000;
 }
+.nav-item button:hover {
+  background-color: rgba(100, 130, 235,1)!important;
+  transition: all .25s ease-in;
+}
 
   .nav-link{
     color:rgba(100, 130, 235,1)!important;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    transition: all .25s ease-in;
   }
   .num{
     font-family: Bebas Neue;
@@ -410,6 +421,9 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     font-family: 'Bebas Neue';
     letter-spacing: 6px;
   }
+  .cid-rVcFcjRDoI {
+    background-image: url("../../media/img/background4.jpg");
+  }
   .hashtag{
     background-color: rgba(100, 130, 235,1);
     color: white;
@@ -427,6 +441,10 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     font-family: 'Rajdhani';
     font-weight: 300;
 
+  }
+  
+  .c{
+    padding: 0;
   }
   .c0{
       padding: 0;
@@ -580,6 +598,9 @@ img.float-left.ml-3 {
             text-align: center;
             display: block;
 
+    }
+    .display-2{
+      font-size: 3rem;
     }
 
 		footer .icons {
