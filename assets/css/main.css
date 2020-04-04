@@ -259,7 +259,17 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     background-color: white;
     z-index: 10000;
 }
+.nav-item button:hover {
+  background-color: rgba(100, 130, 235,1)!important;
+  transition: all .25s ease-in;
+}
 
+  .nav-link{
+    color:rgba(100, 130, 235,1)!important;
+    padding-right: .5rem;
+    padding-left: .5rem;
+    transition: all .25s ease-in;
+  }
   .nav-link{
     color:rgba(100, 130, 235,1)!important;
   }
