@@ -59,7 +59,7 @@
       </div>
     </nav>
     </header>
-    <section class="header6 cid-rVejhWVcLj mbr-fullscreen" style="min-height: 75vh;" data-bg-video="{videoURL:'https://www.youtube.com/watch?v=e_l0UM8v5x4',showControls:false,containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}" id="header6-e">
+  <section class="header6 cid-rVejhWVcLj mbr-fullscreen" data-bg-video="https://www.youtube.com/watch?v=qGS62xEDJso" style="min-height: 75vh;" id="header6-l">
     <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(15, 118, 153);">
     </div>
 
@@ -79,7 +79,7 @@
 
     <div class="mbr-arrow hidden-sm-down" aria-hidden="true">
         <a href="#next">
-<img src="../media/img/right.png" style="width: 40px;
+  <img src="../media/img/right.png" style="width: 40px;
     height: 40px;
     transform: rotate(90deg);
     position: absolute;
@@ -87,7 +87,7 @@
     left: 10px;">
         </a>
     </div>
-</section>
+  </section>
 
 
     <section class="team1 cid-rVcvy3o3JC" id="team1-3">
@@ -148,11 +148,11 @@
 
 
 <?php include('../assets/mod/footer.php'); ?>
-  <script src="../assets/js/jquery.mb.ytplayer.min.js"></script>
   <script src="../assets/js/tether.min.js"></script>
   <script src="../assets/js/bootstrap-carousel-swipe.js"></script>
   <script src="../assets/js/jquery.touch-swipe.min.js"></script>
   <script src="../assets/js/jarallax.min.js"></script>
+  <script src="../assets/js/jquery.mb.ytplayer.min.js"></script>
   <script src="../assets/js/smooth-scroll.js"></script>
   <script src="../assets/js/theme.js"></script>
 </body>
