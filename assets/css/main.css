@@ -304,6 +304,7 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
   
 }
 
+
 #header {
   background-color: white;
   font-family: 'Arimo', sans-serif;
@@ -312,7 +313,13 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
   min-height: 600px;
 }
 
-
+.contribuir{
+  background-color: #fddb3a; 
+  padding: .5rem 1rem; 
+  letter-spacing: 1px; 
+  margin: 0.4rem 0.8rem !important;
+  color: white
+}
 
 #modulo1 {
     background-image: url(../../media/img/3c.jpg);
@@ -449,6 +456,15 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
   .c0{
       padding: 0;
   }
+  /*video {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: auto;
+    z-index: 0;
+    visibility: visible;
+    }*/
   .c0 .row{
     overflow: hidden;
     margin: auto 0;

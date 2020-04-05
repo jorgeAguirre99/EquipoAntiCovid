@@ -1,16 +1,20 @@
+<!DOCKTYPE html>
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EquipoAntiCovid | Nosotros</title>
   <!--BOOTSTRAP CSS -->
-
+  <script>
+ //<![CDATA[
+  document.cookie = 'cross-site-cookie=bar; SameSite=None; Secure';
+ //]]>
+</script>
   <link rel="stylesheet" href="../assets/css/tether.min.css">
   <link rel="stylesheet" href="../assets/css/theme.css">
   <script src="https://kit.fontawesome.com/d2b8efb2df.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
   <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
-  <script src="assets/js/jquery.instagramFeed.js" type="text/javascript"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
   <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css">
@@ -49,16 +53,13 @@
             <a class="nav-link" href="contacto.php">Contacto</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-lg" style="background-color: #fddb3a; color: white" type="button">Contribuir</button>
+            <button class="contribuir btn btn-lg"  type="button">Contribuir</button>
           </li>
         </ul>
       </div>
     </nav>
     </header>
-    <section class="header6 cid-rVcFcjRDoI mbr-fullscreen mbr-parallax-background" style="min-height: 75vh;" id="header6-e">
-
-    
-
+    <section class="header6 cid-rVejhWVcLj mbr-fullscreen" style="min-height: 75vh;" data-bg-video="{videoURL:'https://www.youtube.com/watch?v=e_l0UM8v5x4',showControls:false,containment:'body',autoPlay:true, mute:true, startAt:0, opacity:1}" id="header6-e">
     <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(15, 118, 153);">
     </div>
 
@@ -70,8 +71,8 @@
                 <p class="mbr-text align-center pb-3 mbr-fonts-style display-5" style="font-family: HPLight;"><strong>
                     Equipo Anti Covid</strong> es un proyecto solidario que nace de la mano de jóvenes estudiantes con la colaboración de profesores y profesionales en el sector de la <strong>impresión 3D,</strong> para facilitar y suministrar material de protección a sanitarios y fuerzas de seguridad de la <strong>Comunidad de Madrid
                 </strong></p>
-                <div class="mbr-section-btn align-center"><a class="btn btn-md btn-primary display-4" href="https://mobirise.co">LEARN MORE</a>
-                        <a class="btn btn-md btn-white-outline display-4" href="https://mobirise.co">LIVE DEMO</a></div>
+                <div class="mbr-section-btn align-center">
+                        <a class="btn btn-md btn-white-outline display-4" href="#more">SABER MÁS</a></div>
             </div>
         </div>
     </div>
@@ -87,6 +88,8 @@
         </a>
     </div>
 </section>
+
+
     <section class="team1 cid-rVcvy3o3JC" id="team1-3">
     
     <div class="container align-center">
@@ -141,9 +144,11 @@
     </div>
 </section>
 
-
 </div>
+
+
 <?php include('../assets/mod/footer.php'); ?>
+  <script src="../assets/js/jquery.mb.ytplayer.min.js"></script>
   <script src="../assets/js/tether.min.js"></script>
   <script src="../assets/js/bootstrap-carousel-swipe.js"></script>
   <script src="../assets/js/jquery.touch-swipe.min.js"></script>

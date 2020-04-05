@@ -13,12 +13,14 @@
   <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   <script src="assets/js/jquery.instagramFeed.js" type="text/javascript"></script>
+  <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
+  <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
-
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 </head>
 <body>
-  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+<div id="page-wrapper" class="c container-fluid" style="padding: 0">
   <!--HEADER-->
   <header>
     <nav id="nav" class="navbar navbar-expand-md navbar-dark">
@@ -43,11 +45,11 @@
       </div>
       <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item display: flex; margin-right: 3px;align-items: center;">
+          <li class="nav-item" style="display: flex; align-items: center;">
             <a class="nav-link" href="public/contacto.php">Contacto</a>
           </li>
           <li class="nav-item">
-            <button class="btn btn-lg" style="background-color: #fddb3a; color: white" type="button">Contribuir</button>
+            <button class="contribuir btn btn-lg"  type="button">Contribuir</button>
           </li>
         </ul>
       </div>
@@ -67,8 +69,10 @@
       </div>
     </div>
   </div>
-
-  <div id="modulo1" class="c0 container-fluid text-center">
+  <div class="container-fluid">
+  </div>
+  <div id="modulo1"  class="c0 container-fluid text-center" data-bg-video="">
+    <div id="cabecera">
     <div class="row ml-3" style="min-height: 50px; width: 110px; border-bottom:solid 3px white;">
     </div>
     <div class="row" style="min-height: 50px;">
@@ -105,10 +109,11 @@
         </div>
       </div>
     </div>
+    </div>
+</div>
   </div>
-  </div>
-
   <div id="modulo2" class="c1 container-fluid ">
+
     <div class="row ml-3" style="min-height: 50px; width: 110px; border-bottom:solid 3px white;">
     </div>
     <div class="row" style="min-height: 50px;">
@@ -152,7 +157,7 @@
         <i class="cuadroizqder fas fa-angle-right"></i>
         <div class="inner-modulo2">
         <img class=" ml-3" src="media/img/4.png" height="70px">
-        <p class="mt-2 ml-3">MONTAJE</p>
+        <p class="mt-2 ml-3">MONTAJE DE PARTES</p>
       </div>
       <i class="cuadroderizq fas fa-angle-right"></i>
       <i class="cuadroder fas fa-angle-right"></i>
@@ -172,7 +177,7 @@
         <i class="cuadroizqder fas fa-angle-right"></i>
         <div class="inner-modulo2">
         <img class=" ml-3" src="media/img/6.png" height="70px">
-        <p class="mt-2 ml-3">REPARTO</p>
+        <p class="mt-2 ml-3">REPARTO A HOSPITALES</p>
                 </div>
         <i class="cuadroderizq fas fa-angle-right"></i>
         <i class="cuadroder fas fa-angle-right"></i>
@@ -279,7 +284,7 @@
   </div>
   </div>
   
-</div>
+  </div>
     <footer id="footer">
       <ul class="copyright">
         <li>Contacto: <a href="mailto:equipoanticovid@gmail.com">equipoanticovid@gmail.com</a></li>
@@ -301,7 +306,7 @@
       </ul>
     </footer>
   </div>
-
+</div>
 <script type="text/javascript">
 
     window.cookieconsent.initialise({
@@ -323,13 +328,14 @@
     });
   </script>
   <script src="assets/js/script.js"></script>
+ <script src="assets/js/jarallax.min.js"></script>
   <script src="assets/js/jquery.easing.min.js"></script>
   <script src="assets/js/scrolling-nav.js"></script>
   <script src="assets/js/scroll.js"></script>
+  <script src="assets/js/smooth-scroll.js"></script>
   <script src="assets/js/jquery.scrollx.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-
 </body>
 
 
