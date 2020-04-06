@@ -77,8 +77,9 @@ All Rights Reserved
                         <p>Un dato de carácter personal se refiere a toda la información referida a una persona física identificada o identificable (persona afectada). Se entiende como identificable una persona que pueda ser identificada, directa o indirectamente,
                             sobre todo por referencia a un nombre, un número de identificación (DNI, NIF, NIE, pasaporte) o a uno o varios elementos específicos, propios a su identidad física, fisiológica, genética, psíquica, económica, cultural o social.</p>
 
-                        <p>Los datos que con carácter general serán recopilados en los formularios son: Nombre, Comentario y Correo. Se podrán recopilar otro tipo de datos dependiendo del formulario
-                            siendo informado el Usuario.</p>
+                        <p>Los datos que con carácter general serán recopilados en los formularios son: Nombre, Comentario y Correo. Se podrán recopilar otro tipo de datos dependiendo del formulario siendo así
+                            siendo informado el Usuario. Además las de caracter específico para <strong>petición de ayuda de un centro de salud</strong> 
+                            siendo, correo, nombre del centro, dirección, persona de contacto, número de teléfono para contacto, lugar de entrega, cantidad de pantallas-viseras: (indicar que son reutilizables, por lo que se suele calcular en función del nº de personas que vayan a trabajar simultáneamente)</p>
 
                         <h3>¿Con qué finalidad se tratan&nbsp;tus datos personales?</h3>
 
