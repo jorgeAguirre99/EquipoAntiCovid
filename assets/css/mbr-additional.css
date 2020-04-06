@@ -601,7 +601,7 @@ blockquote {
 }
 @media (max-width: 767px) {
   .btn {
-    font-size: .75rem !important;
+    /*font-size: .75rem !important;*/
   }
   .btn .mbr-iconfont {
     font-size: 1rem !important;

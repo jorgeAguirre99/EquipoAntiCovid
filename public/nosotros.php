@@ -28,7 +28,7 @@
 
   <?php include('../assets/mod/header.php');?>
 
-  <section class="header6 cid-rVejhWVcLj mbr-fullscreen fadeIn " data-bg-video="https://www.youtube.com/watch?v=qGS62xEDJso" style="min-height: 75vh;" id="header6-l">
+  <section class="header6 cid-rVejhWVcLj mbr-fullscreen fadeIn" data-bg-video="https://www.youtube.com/watch?v=qGS62xEDJso" style="min-height: 75vh;" id="header6-l">
     <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(15, 118, 153);">
     </div>
 
@@ -54,7 +54,7 @@
     left: 10px;">
         </a>
     </div>
-  </section>
+</section>
 
 <section class="mbr-section article content1 cid-rVcFPfCqZV fadeInSlow" id="content2-f more">
 
@@ -70,10 +70,11 @@
     <div class="mbr-text col-10 col-md-9 mbr-fonts-style display-7">
             <blockquote><p><strong>Desde nuestras casas,&nbsp;</strong>fabricamos y montamos <strong>viseras-pantallas &nbsp;</strong>a través de impresoras 3D gracias al material donado por varias<strong> compañias y de manera anónima</strong>. Tambíen organizamos y distribuimos la producción con la ayuda de <strong>bomberos de Fuenlabrada</strong>, que entregan a los <strong>Hospitales y Centros de Salud</strong>, que se ponen en contacto con nosotros <strong>solicitando ayuda</strong>.</p><p>Si quieres <strong>participar en nuestro proyecto</strong>, donando material comprándolo o colaborando de alguna forma, ponte en <strong>contacto</strong> con nosotros o<strong> pulse en este botón a bajo</strong> y siga las instrucciones.</p>
         </blockquote>
-        </div>
     </div>
+   </div>
+   <div class="col">
     <p style="text-align:center;margin-top:2em"><a href="donacion.php"><button class="contribuir btn btn-lg" style="width: 40%;" type="button"><i class="fas fa-hand-holding-medical"></i> Contribuir</button></a></p>
- </div>
+    </div>
 </div>
 </section>
 <hr>
@@ -414,10 +415,10 @@
 </section>
 
 
+<?php include('../assets/mod/footer.php'); ?>
+
 </div>
 
-
-<?php include('../assets/mod/footer.php'); ?>
 
   <script src="../assets/js/tether.min.js"></script>
   <script src="../assets/js/bootstrap-carousel-swipe.js"></script>

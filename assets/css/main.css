@@ -276,6 +276,21 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
   font-size: 2.5em;
   text-align: center;
 }
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+   flex-basis: auto;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  transition: all .25s ease-in;
+}
+.navbar-nav {
+  transition: all .25s ease-in;
+  flex-direction: row;
+}
 .agrupacion:hover .media-row:hover .item-image{
   
   filter: grayscale(1);
@@ -909,6 +924,7 @@ width: 80%;
             }
             footer ul{
                 margin-bottom: 1.5rem!important;
+                padding-inline-start: 0!important;
             }
 
 				footer li:first-child {
@@ -1029,6 +1045,9 @@ width: 80%;
       margin: 10px 0 22px 0;
       font-size: 1.5em;
   }
+  .navbar-nav{
+    padding: 35px 0;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 575.90px) {
@@ -1083,22 +1102,11 @@ width: 80%;
     margin: 0.4rem 0 !important;
     color: white;
 }
+.navbar-nav{
+  padding: 35px 0;
 }
-.navbar-collapse {
-  -ms-flex-preferred-size: 100%;
-   flex-basis: auto;
-  -webkit-box-flex: 1;
-  -ms-flex-positive: 1;
-  flex-grow: 1;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  transition: all .25s ease-in;
 }
-.navbar-nav {
-  transition: all .25s ease-in;
-  flex-direction: row;
-}
+
 @media (min-width: 576px) and (max-width:767.98px) {
     /*Teléfonos plus, o Tablets Pequeñas */
     .covid{
@@ -1127,6 +1135,10 @@ width: 80%;
 
         font-size:4em;
     }
+    .navbar-nav{
+      padding: 35px 0;
+    }
+    
     .centrallogo{
       height: 240px;
     }
@@ -1195,9 +1207,12 @@ width: 80%;
     }
 }
 
-@media (min-width: 992px) and (max-width:1199.98px) {
+@media (min-width: 810px) and (max-width:1199.98px) {
     /*Ordenadores pequeños y tablets PRO*/
-.punt{
+    .parallaxminor{
+      height: auto;
+    }
+    .punt{
     visibility: visible;
 }
 }

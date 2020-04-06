@@ -61,7 +61,7 @@
               <div class="row">
                 <div class="col-md-8 mx-auto">
                   <img src="../media/img/paso2.png" >
-                  <h5 class="mt-3">Pinchamos en tramitar pedido y continuamos con el siguieente paso.</h5>
+                  <h5 class="mt-3">Pinchamos en tramitar pedido y continuamos con el siguiente paso.</h5>
                   <a href="https://www.amazon.es/hz/wishlist/ls/2LE66A0D6H42X?ref_=wl_share" class="contribuir2 btn btn-lg" role="button">ENLACE DONACION</a>
                 </div>
               </div>
