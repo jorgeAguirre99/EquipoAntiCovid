@@ -6,6 +6,7 @@
 ?>
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EquipoAntiCovid</title>
   <!--BOOTSTRAP CSS -->
   <script src="https://kit.fontawesome.com/d2b8efb2df.js" crossorigin="anonymous"></script>
@@ -23,10 +24,10 @@
 <div id="page-wrapper" class="c container-fluid" style="padding: 0">
   <!--HEADER-->
   <header>
-    <nav id="nav" class="navbar navbar-expand-md navbar-dark">
-      <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2">
-        <ul class="navbar-nav mr-auto">
-          <li class="nav-item active">
+    <nav id="nav" class="navbar navbar-expand-md navbar-dark fadeIn">
+      <div class="navbar-collapse collapse order-1 order-md-0 dual-collapse2">
+        <ul class="navbar-nav mr-auto" style="/* display: inline-flex; */-webkit-box-orient: none;display: flex;clear: both;float: left;">
+          <li class="nav-item active"  style="margin-right: 12px;">
             <a class="nav-link" href="#">Inicio</a>
           </li>
           <li class="nav-item">
@@ -36,67 +37,71 @@
       </div>
       <div class="mx-auto order-0 d-flex justify-content-center" style="width: 100%;">
         <a class="navbar-brand mx-auto d-flex justify-content-center nomarginleft js-scroll-trigger"  href="#">
-          <img src="media/img/logo.png" height="40px"></a>
+          <img class="logocovid" src="media/img/logo.png" ></a>
         <div class="d-flex justify-content-end align-self-center" style="clear: both;float: right;">
         <button class="navbar-toggler ml-2" type="button" data-toggle="collapse" data-target=".dual-collapse2">
           <i class="fas fa-bars"></i>
         </button>
         </div>
       </div>
-      <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
-        <ul class="navbar-nav ml-auto">
+      <div class="navbar-collapse collapse order-3 dual-collapse2" style="clear: both; float: right;">
+        <ul class="navbar-nav ml-auto" style="display: flex;float: right;clear: both;">
           <li class="nav-item" style="display: flex; align-items: center;">
-            <a class="nav-link" href="public/contacto.php">Contacto</a>
+            <a class="nav-link" style="margin-right: 8px" href="public/contacto.php">Contacto</a>
           </li>
           <li class="nav-item">
-            <button class="contribuir btn btn-lg"  type="button">Contribuir</button>
+          <a href = "public/donacion.php"><button class="contribuir btn btn-lg"  type="button">Contribuir</button></a>
           </li>
         </ul>
       </div>
     </nav>
     </header>
   
-  <div id="header" class="container-fluid text-center">
+  <div id="header" class="c7 container-fluid text-center fadeInSlow">
     <div class="row" style="min-height: 450px">
       <div class="col align-self-center justify-content-center">
-        <img src="media/img/central_logo.png" height="280px" alt="" class="mt-3">
+        <img class="centrallogo" src="media/img/central_logo.png"  alt="" class="mt-3">
       </div>
     </div>
     <div class="row" style="min-height: 100px">
       <div class="col align-self-center justify-content-center">
-        <a href="#modulo1" class="btn btn-primary btn-lg mx-2 my-2 js-scroll-trigger FadeLeft" style="background-color: #fddb3a; border-color:#fddb3a; width: 300px">Como ayudar</a>
-        <a href="#modulo2" class="btn btn-primary btn-lg mx-2 my-2 js-scroll-trigger FadeRight" style="background-color: rgba(100, 130, 235,1); border-color:rgba(100, 130, 235,1); width: 300px ">Conoce el proceso</a>
+        <a href="#modulo1" class="btn btn-lg mx-2 my-2 js-scroll-trigger FadeLeft">Como ayudar</a>
+        <a href="#modulo2" class="btn btn-lg mx-2 my-2 js-scroll-trigger FadeRight">Conoce el proceso</a>
       </div>
     </div>
   </div>
   <div class="container-fluid">
   </div>
-  <div id="modulo1"  class="c0 container-fluid text-center" data-bg-video="">
+  <div id="modulo1"  class="c0 container-fluid text-center">
+  <div id="principal" class="principal fadeIn">
+      <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
+        <source src="media/videos/vid4.mp4" type="video/mp4">
+      </video>
     <div id="cabecera">
     <div class="row ml-3" style="min-height: 50px; width: 110px; border-bottom:solid 3px white;">
     </div>
-    <div class="row" style="min-height: 50px;">
+    <div class="row FadeLeft" style="min-height: 50px;">
       <div class="col-2 m-3">
-        <img class="ml-5" src="media/img/texto1.png" height="60px">
+        <img class="ml-5 titulotext" src="media/img/texto1.png">
       </div>
     </div>
     <div class="row">
-      <div class="col-6 col-sm-4 my-5 FadeLeft">
+      <div class=" col-sm-4 my-5 FadeLeft">
         <div class="card ">
           <div class="card-body">
             <img src="media/img/comparte.png" height="45px">
             
             <p class="card-text mt-3">Siguenos en nuestros perfiles y comparte el contenido.</p>
-            <a href="#" class="btn btn-primary" style="background-color: #fddb3a; border-color:#fddb3a"><i class="ico fas fa-heart"></i></a>
+            <a href="https://www.instagram.com/equipoanticovid/" class="btn" ><i class="ico fas fa-heart"></i></a>
           </div>
         </div>
       </div>
-      <div class="col-6 col-sm-4 my-5 slideanim">
+      <div class=" col-sm-4 my-5 slideanim">
         <div class="card ">
           <div class="card-body">
             <img src="media/img/dona.png" height="45px">
             <p class="card-text mt-3">Dona materiales necesarios para la fabricación de viseras.</p>
-            <a href="#" class="btn btn-primary" style="background-color: #fddb3a; border-color:#fddb3a"><i class="ico fas fa-hand-holding-medical"></i></a>
+            <a href="public/donacion.php" class="btn"><i class="ico fas fa-hand-holding-medical"></i></a>
           </div>
         </div>
     </div>
@@ -105,24 +110,25 @@
         <div class="card-body">
           <img src="media/img/proveedores.png" height="47px">
           <p class="card-text mt-3">Ponnos en contacto con empresas que donen material.</p>
-          <a href="#" class="btn btn-primary" style="background-color: #fddb3a; border-color:#fddb3a"><i class="ico fas fa-map-marker-alt"></i></a>
+          <a href="public/contacto.php" class="btn" ><i class="ico fas fa-map-marker-alt"></i></a>
         </div>
       </div>
     </div>
     </div>
-</div>
+    </div>
+    </div>
   </div>
   <div id="modulo2" class="c1 container-fluid ">
 
     <div class="row ml-3" style="min-height: 50px; width: 110px; border-bottom:solid 3px white;">
     </div>
-    <div class="row" style="min-height: 50px;">
+    <div class="row FadeLeft" style="min-height: 50px;">
       <div class="col-2 m-3">
-        <img class="ml-5" src="media/img/logo3.png" height="60px">
+        <img class="ml-3 titulotext" src="media/img/logo3.png">
       </div>
     </div>
     <div class="row">
-      <div class="col-6 col-md-4 my-5 FadeLeft">
+      <div class="col-sm-4 col-md-4 my-5 FadeLeft">
         <i class="cuadroizq fas fa-angle-right"></i>
         <i class="cuadroizqder fas fa-angle-right"></i>
         <div class="inner-modulo2">
@@ -132,7 +138,7 @@
         <i class="cuadroderizq fas fa-angle-right"></i>
         <i class="cuadroder fas fa-angle-right"></i>
       </div>
-      <div class="col-6 col-md-4 my-5 FadeLeft">
+      <div class=" col-sm-4 col-md-4 my-5 PopIn">
         <i class="cuadroizq fas fa-angle-right"></i>
         <i class="cuadroizqder fas fa-angle-right"></i>
         <div class="inner-modulo2">
@@ -142,7 +148,7 @@
         <i class="cuadroderizq fas fa-angle-right"></i>
         <i class="cuadroder fas fa-angle-right"></i>
       </div>
-      <div class="col-6 col-md-4 my-5 FadeLeft">
+      <div class=" col-sm-4 col-md-4 my-5 FadeRight">
         <i class="cuadroizq fas fa-angle-right"></i>
         <i class="cuadroizqder fas fa-angle-right"></i>
         <div class="inner-modulo2">
@@ -152,7 +158,7 @@
       <i class="cuadroderizq fas fa-angle-right"></i>
       <i class="cuadroder fas fa-angle-right"></i>
       </div>
-      <div class="col-6 col-md-4 my-5 FadeLeft">
+      <div class=" col-sm-4 col-md-4 my-5 FadeLeft">
         <i class="cuadroizq fas fa-angle-right"></i>
         <i class="cuadroizqder fas fa-angle-right"></i>
         <div class="inner-modulo2">
@@ -162,7 +168,7 @@
       <i class="cuadroderizq fas fa-angle-right"></i>
       <i class="cuadroder fas fa-angle-right"></i>
       </div>
-      <div class="col-6 col-md-4 my-5 FadeLeft">
+      <div class="col-sm-4 col-md-4 my-5 PopIn">
         <i class="cuadroizq fas fa-angle-right"></i>
         <i class="cuadroizqder fas fa-angle-right"></i>
         <div class="inner-modulo2">
@@ -172,7 +178,7 @@
       <i class="cuadroderizq fas fa-angle-right"></i>
       <i class="cuadroder fas fa-angle-right"></i>
       </div>
-      <div class="col-6 col-md-4 my-5 FadeLeft">
+      <div class="col-sm-4 col-md-4 my-5 FadeRight">
         <i class="cuadroizq fas fa-angle-right"></i>
         <i class="cuadroizqder fas fa-angle-right"></i>
         <div class="inner-modulo2">
@@ -205,7 +211,7 @@
     </div>
   </div>
   <div class="c4 container-fluid">
-  <div id="instagram-feed-demo" class="instagram_feed slideanim" >
+  <div id="instagram-feed-demo" class="instagram_feed PopIn" >
   </div>
   </div>
   <script type="text/javascript">
@@ -228,7 +234,7 @@
 
     <div class="empresas">
 
-      <p class="titulo">Nuestros Colaboradores</p>
+      <p class="titulo PopIn">Nuestros Colaboradores</p>
       <div class="row">
         <div class="col-6 col-md-3 FadeLeft">
           <img src="media/img/ufv-logo.png" class="logo"/>
@@ -255,16 +261,16 @@
         </div>
       </div>
     </div>
-    <div id="modulo3" class="container-fluid ">
+    <div id="modulo3" class="c8 container-fluid">
   <div class="row ml-3" style="min-height: 50px; width: 110px; border-bottom:solid 3px white;">
   </div>
   <div class="row" style="min-height: 50px;">
   <div class="col-12 col-md-6">
   <div class="row m-3">
-  <img class="ml-5" src="media/img/comentario.png" height="55px">
+  <img class="ml-5 FadeLeft titulotext" src="media/img/comentario.png">
   </div>
   <div class="row">
-  <div class="col-12">
+  <div class="col-12 FadeLeft">
   <form class="mx-3 mt-5" method = "post" action = "assets/mod/GuardarComentario.php">
   <div class="form-group">
   <label>Nombre</label>
@@ -274,7 +280,7 @@
   <label for="exampleFormControlTextarea1">Comentarios</label>
   <textarea class="form-control" rows="3" name="comentario" required = "true"></textarea>
   </div>
-  <button type="submit" class="btn btn-primary" style="background-color: #fddb3a; border-color:#fddb3a">Enviar Comentario</button>
+  <button type="submit" class="btn PopIn">Enviar Comentario</button>
   </form>
   </div>
   </div>
@@ -332,6 +338,7 @@
   <script src="assets/js/jquery.easing.min.js"></script>
   <script src="assets/js/scrolling-nav.js"></script>
   <script src="assets/js/scroll.js"></script>
+  <script src="assets/js/jquery.videoBG.js"></script>
   <script src="assets/js/smooth-scroll.js"></script>
   <script src="assets/js/jquery.scrollx.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

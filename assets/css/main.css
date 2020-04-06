@@ -34,6 +34,10 @@
     font-family: 'HPRegular';
     
 }
+body, html {
+  height: 100%;
+}
+
 /*Animaciones Extras---------------------------------------------------------------------------------------------------------------*/
 @-webkit-keyframes pop-in {
   0% {
@@ -252,16 +256,85 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
   }
 }
 /*Codigo Página -----------------------------------------------------------------------------------------*/
+.iconos{
+  padding: 30px;
+  font-size: 3em;
+}
+.agrupacion:hover .item-image{
+  filter: grayscale(0);
+  cursor: pointer;
+  transition: all .25s ease-in;
+}
+.agrupacion .row:nth-child(1){
+  cursor: pointer;
+}
+.agrupacion .row:nth-child(1):hover{
+  transition: all .25s ease;
+  padding: 0 10px;
+}
+.subtitles p{
+  font-size: 2.5em;
+  text-align: center;
+}
+.agrupacion:hover .media-row:hover .item-image{
+  
+  filter: grayscale(1);
+  transition: all .25s ease-in;
+}
+.agrupacion:hover .media-row:hover .item-image:hover{
+  filter: grayscale(0);
+  transition: all .25s ease-in;
+}
+.agrupacion .row:hover .cuadroizq{color: black;}
+.agrupacion .row:hover .cuadroderizq{color: black;}
+.agrupacion .row:hover .cuadroder{color: black;}
+.agrupacion .row:hover .cuadroizqder{color: black;}
+
+.agrupacion .cuadroizq{
+  transform: rotate(-135deg);
+  font-size: 3em;
+  clear: none;
+  color: white;
+  float: left;
+}
+.agrupacion .cuadroizqder{
+  transform: rotate(-45deg);
+  font-size: 3em;
+  clear: none;
+  float: right;
+  color: white;
+}
+.agrupacion .cuadroderizq{
+  transform: rotate(+135deg);
+  font-size: 3em;
+  clear: none; 
+  color: white;
+  float: left;
+}
+.agrupacion .cuadroder{
+  float: right;
+  transform: rotate(+45deg);
+  font-size: 3em;
+  clear: none;
+  color: white;
+}
 .item-image{
 
   filter: grayscale(1);
-
+  transition: all .25s ease-in;
 }
+.item-image:hover{
+
+  filter: grayscale(0);
+  transition: all .25s ease-in;
+}
+
     header{
     position: sticky;
     top:0;
     background-color: white;
     z-index: 10000;
+    padding: 10px 5px 10px 20px;
 }
 .nav-item button:hover {
   background-color: rgba(100, 130, 235,1)!important;
@@ -272,6 +345,10 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     color:rgba(100, 130, 235,1)!important;
     padding-right: .5rem;
     padding-left: .5rem;
+    transition: all .25s ease-in;
+  }
+  .nav-link:hover{
+    color:rgba(100, 130, 235, 0.71)!important;
     transition: all .25s ease-in;
   }
   .num{
@@ -290,18 +367,18 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
   }
   .navbar-toggler:hover{
       border: none;
-      background-color:rgba(100, 130, 235,1);
+      background-color:rgba(100, 130, 235, 1);
       color:  white!important;
       transition: all .25s ease-in;
   }
 
-#nav {
+nav {
   background-color: white;
   font-family: 'Arimo', sans-serif;
   color: rgba(100, 130, 235, 1) !important;
   font-size: 18px;
   min-height: 75px;
-  
+  padding: 0!important;
 }
 
 
@@ -318,7 +395,13 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
   padding: .5rem 1rem; 
   letter-spacing: 1px; 
   margin: 0.4rem 0.8rem !important;
-  color: white
+  color: white;
+  transition: all .25s ease-in;
+}
+.contribuir:hover{
+  background-color: rgba(100, 130, 235, 1);
+  color: white;
+  transition: all .25s ease-in;
 }
 
 #modulo1 {
@@ -354,7 +437,7 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     display: flex;
     justify-content: center;
 }
-.col-6.col-md-4.my-5.FadeLeft.fadeInLeft:hover{
+.c1 .col-md-4.my-5:hover{
     background-color: rgba(100, 130, 235,1);
     cursor: pointer;
     transition: all .25s ease;
@@ -377,10 +460,10 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
   transition: all .25s ease-in;
   min-height: 450px;
 }
-.col-6.col-md-4.my-5.FadeLeft.fadeInLeft:hover .cuadroizq{color: white;}
-.col-6.col-md-4.my-5.FadeLeft.fadeInLeft:hover .cuadroizqder{color: white;}
-.col-6.col-md-4.my-5.FadeLeft.fadeInLeft:hover .cuadroderizq{color: white;}
-.col-6.col-md-4.my-5.FadeLeft.fadeInLeft:hover .cuadroder{color: white;}
+.c1 .col-md-4.my-5:hover .cuadroizq{color: white;}
+.c1 .col-md-4.my-5:hover .cuadroizqder{color: white;}
+.c1 .col-md-4.my-5:hover .cuadroderizq{color: white;}
+.c1 .col-md-4.my-5:hover .cuadroder{color: white;}
 .cuadroizq{
     transform: rotate(-135deg);
     font-size: 3em;
@@ -414,6 +497,11 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     color: rgba(100, 130, 235,1);
     margin-bottom: 45px;
   }
+  .logocovid{
+    height:40px;
+    display: flex;
+    align-self: flex-end;
+  }
   .covid{
     background-color: white;
     color: rgba(100, 130, 235,1)!important;
@@ -430,6 +518,9 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
   }
   .cid-rVcFcjRDoI {
     background-image: url("../../media/img/background4.jpg");
+  }
+  .titulotext{
+    height:60px;
   }
   .hashtag{
     background-color: rgba(100, 130, 235,1);
@@ -449,7 +540,30 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     font-weight: 300;
 
   }
-  
+
+  a.btn.btn-lg.mx-2.my-2.js-scroll-trigger{
+    width: 270px;
+    color: white!important;
+  }
+  a.btn.btn-lg.mx-2.my-2.js-scroll-trigger.FadeLeft.fadeInLeft:nth-child(1){
+    background-color: #fddb3a!important; 
+  }
+  a.btn.btn-lg.mx-2.my-2.js-scroll-trigger.FadeLeft.fadeInLeft:nth-child(1):hover{
+    color: #fddb3a!important;
+    border-color: #fddb3a;
+    background-color: white!important; 
+  }
+  a.btn.btn-lg.mx-2.my-2.js-scroll-trigger.FadeRight.fadeInRight:nth-child(2){
+    background-color: rgba(100, 130, 235,1)!important; 
+  }
+  a.btn.btn-lg.mx-2.my-2.js-scroll-trigger.FadeRight.fadeInRight:nth-child(2):hover{
+    background-color: white!important;
+    color: rgba(100, 130, 235,1)!important; 
+    border-color: #617fe5;
+  }
+  .centrallogo{
+    height: 280px;
+  }
   .c{
     padding: 0;
   }
@@ -468,6 +582,33 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
   .c0 .row{
     overflow: hidden;
     margin: auto 0;
+    padding-top: 25px;
+  }
+  .c8{
+    padding: 0;
+  }
+
+  
+  .c8 .btn {
+    background-color: #fddb3a; 
+    transition: all .25s ease;
+    color: white;
+}
+  .c8 .btn:hover{
+    background-color: rgba(100, 130, 235,1);
+    transition: all .25s ease;  
+  }
+
+  .c0 a.btn {
+    background-color: #fddb3a; 
+    transition: all .25s ease;
+    color: white;
+    padding: 0em 4em;
+    font-size: 1.5em;
+}
+  .c0 a:hover{
+    background-color: rgba(100, 130, 235,1);
+    transition: all .25s ease;  
   }
   .c1{
     padding: 0;
@@ -532,10 +673,13 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     background:white;
     margin: 25px auto;
 }
-
+blockquote {
+  border-color: #617fe5!important;
+}
   .empresas .logo{
     width: 12em;
     height: 12em;
+    padding: 4px;
   }
   .empresas .row{
     padding: 1.5em;
@@ -558,10 +702,7 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
     transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   
 }
-.c0 a.btn.btn-primary {
-    padding: 0em 4em;
-    font-size: 1.5em;
-}
+
 img.float-left.ml-3 {
     margin-right: 1rem;
 }
@@ -597,6 +738,114 @@ img.float-left.ml-3 {
     margin: 10px 0 22px 0;
     font-size: 3.5em;
 }
+/*DONACIÓN------------------------------------*/
+
+#principal {
+  position: relative;
+  background-color: black;
+  height: 75vh;
+  min-height: 600px;
+  width: 100%;
+  overflow: hidden;
+}
+
+#principal video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: 0;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+
+#principal .container {
+  position: relative;
+  z-index: 2;
+}
+
+#principal .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+.c0 .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.5;
+  background-color: transparent!important;
+  z-index: 1;
+}
+.c0 #principal {
+  position: relative;
+  background-color: black;
+  min-height: 600px;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+.c0 #principal video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+}
+#paso1 img{
+width: 80%;
+}
+#paso2 img{
+ width: 100%;
+}
+#paso3 img{
+ width: 80%;
+}
+#paso4 img{
+ width: 80%;
+}
+
+.pasos{
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: .5rem 1rem;
+  letter-spacing: 1px;
+  margin: 0.4rem 0.8rem !important;
+  color: white;
+  width: 130px;
+}
+
+.contribuir2{
+  background-color: white;
+  padding: .5rem 1rem;
+  letter-spacing: 1px;
+  margin: 0.4rem 0.8rem !important;
+  color: rgba(100, 130, 235, 1);
+}
+
+.active1{
+	background-color: rgba(100, 130, 235, 1);
+}
+
+
 
 /*Footer--------------------------------------------------------------------------------------------------------------------*/
 /* Footer */
@@ -753,9 +1002,12 @@ img.float-left.ml-3 {
         background-attachment: scroll;
         transition: none;
     }
-    .c0 a.btn.btn-primary {
+    .c0 a.btn{
         padding: 0 1.5em;
         font-size: 1.2em;
+    }
+    .titulotext{
+      height:35px;
     }
     .numeros{
 
@@ -767,6 +1019,16 @@ img.float-left.ml-3 {
     .punt{
         visibility: hidden;
     }
+    .centrallogo{
+      height: 210px;
+    }
+    .logocovid{
+      height:20px;
+    }
+    .empresas .titulo {
+      margin: 10px 0 22px 0;
+      font-size: 1.5em;
+  }
 }
 
 @media (min-width: 320px) and (max-width: 575.90px) {
@@ -783,28 +1045,69 @@ img.float-left.ml-3 {
         background-attachment: scroll;
         transition: none;
     }
-    .c0 a.btn.btn-primary {
-        padding: 0em 3em;
+    .c0 a.btn{
+        padding: 0em 6em;
         font-size: 1.2em;
+    }
+    .titulotext{
+      height:55px;
     }
     .numeros{
 
         font-size:3.5em;
     }
-
+    .centrallogo{
+      height: 218px;
+    }
+    .empresas .logo {
+      width: 7em;
+      height: 7em;
+    }
     .parallaxminor{
         height: auto;
     }
     .punt{
         visibility: hidden;
     }
+    .logocovid{
+      height:30px;
+    }
+    .empresas .titulo {
+      margin: 10px 0 22px 0;
+      font-size: 2.5em;
+  }
+  .contribuir {
+    background-color: #fddb3a;
+    padding: .4rem 10px;
+    letter-spacing: 1px;
+    margin: 0.4rem 0 !important;
+    color: white;
 }
-
+}
+.navbar-collapse {
+  -ms-flex-preferred-size: 100%;
+   flex-basis: auto;
+  -webkit-box-flex: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  transition: all .25s ease-in;
+}
+.navbar-nav {
+  transition: all .25s ease-in;
+  flex-direction: row;
+}
 @media (min-width: 576px) and (max-width:767.98px) {
     /*Teléfonos plus, o Tablets Pequeñas */
     .covid{
         margin-left: 8%;
         margin-right: 8%;
+    }
+    .empresas .logo {
+      width: 9em;
+      height: 9em;
     }
     .parallax {
         background-attachment: scroll;
@@ -814,37 +1117,81 @@ img.float-left.ml-3 {
         background-attachment: scroll;
         transition: none;
     }
+    .logocovid{
+      height:35px;
+    }
+    .titulotext{
+      height:40px;
+    }
     .numeros{
 
         font-size:4em;
     }
+    .centrallogo{
+      height: 240px;
+    }
     .parallaxminor{
         height: auto;
     }
-    .c0 a.btn.btn-primary {
-        padding: 0 1.5em;
+    .c0 a {
+        padding: 0 1.5em!important;
         font-size: 1.5em;
     }
     .punt{
         visibility: hidden;
     }
+    .empresas .titulo {
+      margin: 10px 0 22px 0;
+      font-size: 2.5em;
+  }
+  .contribuir {
+    background-color: #fddb3a;
+    padding: .4rem 10px;
+    letter-spacing: 1px;
+    margin: 0.4rem 0rem !important;
+    color: white;
+}
 }
 
 @media (min-width: 760px) and (max-width:991.98px) {
     /*Tablets mediantas y grandes*/
+    .contribuir {
+      background-color: #fddb3a;
+      padding: .4rem 10px;
+      letter-spacing: 1px;
+      margin: 0.4rem 0.4rem !important;
+      color: white;
+  }
     .covid{
         margin-right: 60%;
     }
+    .empresas .titulo {
+      margin: 10px 0 22px 0;
+      font-size: 3em;
+  }
+  .empresas .logo {
+    width: 12em;
+    height: 12em;
+  }
     .numeros{
 
         font-size:4.5em;
     }
-    .c0 a.btn.btn-primary {
-        padding: 0em 3em;
+    .c0 a.btn {
+        padding: 0em 2em;
         font-size: 1.5em;
     }
     .punt{
         visibility: visible;
+    }
+    .logocovid{
+      height:40px;
+    }
+    .centrallogo{
+      height: 260px;
+    }
+    .titulotext{
+      height:60px;
     }
 }
 
