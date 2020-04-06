@@ -1,5 +1,5 @@
-<!DOCKTYPE html>
-<head>
+<!DOCTYPE html>
+<head lang="es">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EquipoAntiCovid | Nosotros</title>
@@ -73,7 +73,7 @@
     </div>
    </div>
    <div class="col">
-    <p style="text-align:center;margin-top:2em"><a href="donacion.php"><button class="contribuir btn btn-lg" style="width: 40%;" type="button"><i class="fas fa-hand-holding-medical"></i> Contribuir</button></a></p>
+    <p style="text-align:center;margin-top:2em"><a href="donacion.php"><button class="contribuir btn btn-lg" style="width: 60%;" type="button"><i class="fas fa-hand-holding-medical"></i> Contribuir</button></a></p>
     </div>
 </div>
 </section>

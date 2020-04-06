@@ -9,12 +9,9 @@ $row = $result->fetch_object();
 $date1 = strtotime($date0."-1 days");
 $date1 = date("d/m/Y",$date1);
 $sql4 = "SELECT SUM(`COL 3`) AS C FROM `covid` where `COL 2` = '$date1'";
-$sql5 = "SELECT SUM(`COL 7`) AS F FROM `covid` where `COL 2` = '$date1'";
 $result5 = $conexion->query($sql4);
 $row5 = $result5->fetch_object();
 $sw = false;
-$result6 = $conexion->query($sql5);
-$row6 = $result6->fetch_object();
 if($today != $row->HOY || $row5->C == NULL){
   $sw = true;
   $url = 'https://covid.ourworldindata.org/data/ecdc/total_cases.csv';
@@ -85,6 +82,28 @@ if($i == $fila-1) {
 
   $result = $conexion->query($borrarcasos);
   $result = $conexion->query($mundo);
+
+  $today = date("Y-m-d");
+  $date0 = date("m/d/Y");
+  $sql = "SELECT `COL 1` AS HOY FROM `total_cases` WHERE `COL 1` != 'date' ORDER BY `COL 1` desc LIMIT 2";
+  $result = $conexion->query($sql);
+  $row = $result->fetch_object();
+  $date1 = strtotime($date0."-1 days");
+  $date1 = date("d/m/Y",$date1);
+  $sql4 = "SELECT SUM(`COL 3`) AS C FROM `covid` where `COL 2` = '$date1'";
+  $sql7 = "SELECT SUM(`COL 7`) AS F FROM `covid` where `COL 2` = '$date1';";
+  $result5 = $conexion->query($sql4);
+  $row5 = $result5->fetch_object();
+  $result7 = $conexion->query($sql7);
+  $row7 = $result7->fetch_object();
+  $sw = true;
+  
+  if($today != $row->HOY || $row5->C == NULL){
+    $sw = true;
+  }
+  else{
+    $sw = false;
+  }
 }
 
 ?>

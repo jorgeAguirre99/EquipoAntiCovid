@@ -515,7 +515,7 @@ nav {
   .logocovid{
     height:40px;
     display: flex;
-    align-self: flex-end;
+    align-self: center;
   }
   .covid{
     background-color: white;
@@ -717,7 +717,10 @@ blockquote {
     transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   
 }
-
+section#top-1 {
+  visibility: hidden;
+  display: none;
+}
 img.float-left.ml-3 {
     margin-right: 1rem;
 }
@@ -733,6 +736,12 @@ img.float-left.ml-3 {
         .img5{
             background-image: url('../../media/img/5c.jpg');
             }
+            .img6{
+              background-image: url('../../media/img/6c.jpg');
+              }
+              .img7{
+                background-image: url('../../media/img/7c.jpg');
+                }
 .parallaxminor {
     background-attachment: fixed;
     background-position: center;
@@ -859,7 +868,193 @@ width: 80%;
 .active1{
 	background-color: rgba(100, 130, 235, 1);
 }
+/*Articulo Politicas de Cookies y Privacidad-------------------------------------------------------------------------------------------------------------------*/        
+#main .inner strong {
+  color: rgba(100, 130, 235, 1);
+}
+        #main .inner.priv strong {
+            color: rgba(100, 130, 235, 1);
+        }
+        #main .inner h1 {
+            text-align: left;
+        }
+        #main .inner a {
+            color: #1877f2;
+        }
+                        #main .inner a:hover {
+                            color: #fddb3a;
+                        }
+        #main .inner h3 {
+            margin-top: 40px;
+            margin-bottom: 20px;
+        }
+        #main .inner h4{
+          float: right;
+          padding: 10px;
+        }
+                      #main .inner h4 span{
+                          color:white;
+                          clear: both;
+                      }
 
+        #main .inner h5 {
+            margin-top: 30px;
+            margin-bottom: 20px;
+        }
+        #main .inner h6{
+          float: right;
+          font-family: "Rajdhani"; 
+          letter-spacing: 4px;
+          clear: both;
+        }
+        #main .inner p:nth-child(2) {
+            margin-top: 20px;
+        }
+        #main{
+          margin-top: 5em;
+        }
+/*Media Queries para los articulos--------------------------------------*/          
+@media screen and (max-width: 1280px) {
+  .spotlight .image {
+      width: 45%;
+  }
+  .wrapper>.inner {
+      width: 90%;
+  }
+  .spotlight .content {
+      width: 55%;
+  }
+  #main .inner h1 {
+      text-align: left;
+  }
+  #main .inner h4 {
+      font-size: 1.4em!important;
+  }
+}
+
+@media screen and (max-width: 980px) {
+  .spotlight {
+      display: block;
+      padding: 0;
+  }
+  .wrapper>.inner {
+      width: 100%;
+  }
+  .spotlight br {
+      display: none;
+  }
+  .spotlight .image {
+      width: 100%;
+  }
+  #main .inner p {
+      padding: 0 25px;
+  }
+  .spotlight:nth-child(even) h2{
+      text-align: center;
+  }
+  .spotlight:nth-child(odd) h2{
+      text-align: center;
+  } 
+  .spotlight .content {
+      padding: 4em 3em;
+      max-width: none;
+      text-align: center;
+      width: 100%;
+  }
+  #main .inner h1 {
+      text-align: center;
+  }
+  #main .inner h2 {
+      font-size: 1em;
+  }
+  #main .inner h3 {
+      text-align: center;
+  }
+  #main .inner h5 {
+      text-align: center;
+  }
+  #main .inner h4 {
+      font-size: 1.2em!important;
+  }
+
+}
+
+@media screen and (max-width: 736px) {
+  .spotlight {
+      padding: 0;
+  }
+  #main .inner h1 {
+      font-size: 2em;
+      text-align: center;
+  }
+  .spotlight .content {
+      padding: 3em 2em 3em 2em;
+  }
+  #main .inner p {
+      font-size: 0.9em;
+      padding: 0 25px;
+  }
+  .spotlight .content h2 {
+      font-weight: 300;
+      font-size: 1em;
+  }
+  #main .inner h3 {
+      text-align: center;
+  }
+  #main .inner h5 {
+      text-align: center;
+  }
+  #main .inner h4 {
+      font-size: 1em!important;
+  }
+  #main .inner h6 {
+      font-size: 0.8em!important;
+  }
+}
+@media screen and (max-width: 321px){
+  #main .inner h4 {
+      font-size: 0.9em!important;
+  }
+  #main .inner p {
+      font-size: 0.9em;
+      padding: 0 25px;
+  }
+
+}
+.c11 {
+  height: 150px;
+  padding: 0;
+}
+          .c11 div.row {
+              width: 100%;
+              padding: 0;
+              margin: 0;
+          }
+                      .c11 div.row div.col {
+                          padding: 0;
+                      }
+                      .main {
+                        width: 100%;
+                        text-align: center;
+                        margin: 0;
+                      }
+                      .maintitle {
+                        text-transform: uppercase;
+                        font-family: 'Anton', 'sans-serif';
+                        letter-spacing: 7px;
+                        font-size: 5em;
+                        color: white;
+                    }/*Páginas Secundarias*/
+.c11.parallaxminor {
+  height: 100%;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all .25s ease-in;
+  height: 70vh;
+  min-height: 0;
+}
 
 
 /*Footer--------------------------------------------------------------------------------------------------------------------*/
@@ -1005,8 +1200,13 @@ width: 80%;
   
  
   }
-@media screen and (max-width: 319.98px) {
+@media screen and (max-width: 320px) {
     /*Teléfonos Pequeños*/
+    .maintitle {
+      text-transform: uppercase;
+      letter-spacing: 7px;
+      font-size: 3em;
+  }
     .covid{
         margin-left: 0%;
         margin-right: 0%;
@@ -1046,17 +1246,29 @@ width: 80%;
       font-size: 1.5em;
   }
   .navbar-nav{
-    padding: 35px 0;
+    padding: 20px 0;
   }
+  .contribuir {
+    background-color: #fddb3a;
+    padding: .4rem 10px;
+    letter-spacing: 1px;
+    margin: 0.4rem 0 !important;
+    color: white;
+    font-size: 0.8em;
+}
 }
 
-@media (min-width: 320px) and (max-width: 575.90px) {
+@media (min-width: 321px) and (max-width: 575.90px) {
     /*Iphone 4, Teléfonos Pequeños y Medianos*/
     .covid{
         margin-left: 8%;
         margin-right: 8%;
     }
-
+    .maintitle {
+      text-transform: uppercase;
+      letter-spacing: 7px;
+      font-size: 3.5em;
+  }
     .parallax {
         background-attachment: scroll;
     }
@@ -1101,6 +1313,7 @@ width: 80%;
     letter-spacing: 1px;
     margin: 0.4rem 0 !important;
     color: white;
+    font-size: 1em
 }
 .navbar-nav{
   padding: 35px 0;
@@ -1113,6 +1326,11 @@ width: 80%;
         margin-left: 8%;
         margin-right: 8%;
     }
+    .maintitle {
+      text-transform: uppercase;
+      letter-spacing: 7px;
+      font-size: 4em;
+  }
     .empresas .logo {
       width: 9em;
       height: 9em;
@@ -1174,6 +1392,11 @@ width: 80%;
       margin: 0.4rem 0.4rem !important;
       color: white;
   }
+  .maintitle {
+    text-transform: uppercase;
+    letter-spacing: 7px;
+    font-size: 4.5em;
+}
     .covid{
         margin-right: 60%;
     }
@@ -1214,6 +1437,12 @@ width: 80%;
     }
     .punt{
     visibility: visible;
+    }
+    .maintitle {
+      text-transform: uppercase;
+      letter-spacing: 7px;
+      font-size: 5em;
+  }
 }
 }
 

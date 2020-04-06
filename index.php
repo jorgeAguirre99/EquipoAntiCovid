@@ -9,8 +9,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>EquipoAntiCovid</title>
   <!--BOOTSTRAP CSS -->
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/d2b8efb2df.js" crossorigin="anonymous"></script>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
   <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   <script src="assets/js/jquery.instagramFeed.js" type="text/javascript"></script>
@@ -19,6 +19,14 @@
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="assets/css/main.css">
   <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
+  <script>
+        jQuery(document).ready(function($) {
+            $('.counter').counterUp({
+                delay: 10,
+                time: 1500
+            });
+        });
+    </script>
 </head>
 <body>
 <div id="page-wrapper" class="c container-fluid" style="padding: 0">
@@ -194,16 +202,17 @@
     <div class="soft">
       <p class="covid">Covid-19</p>
       <div class="row d-flex justify-content-center">
+      
         <div class="col-md-4">
-            <span class="numeros counter FadeLeft" data-count="<?php echo $infectados ?>"><?php echo $infectados ?></span><!--Total infectados global-->
+            <span class="counter numeros FadeLeft" ><?php echo $infectados ?></span><!--Total infectados global-->
             <p>Infectados en el Mundo</p>
         </div>
         <div class="col-md-4">
-          <span class="numeros counter slideanim" data-count="<?php echo $infectes ?>"><?php echo $infectes ?></span><!--Total en españa-->
+          <span class="counter numeros slideanim" ><?php echo $infectes ?></span><!--Total en españa-->
           <p>Infectados en España</p>
         </div>
         <div class="col-md-4">
-          <span class="numeros counter FadeRight" style="color:lime" data-count="<?php echo $recues ?>"><?php echo $recues ?></span><span class="plus">+</span><!--Total curados en españa-->
+          <span class="counter numeros FadeRight" style="color:lime"><?php echo $recues ?></span><span class="plus">+</span><!--Total curados en españa-->
           <p>Recuperados en España</p>
         </div>
       </div>
@@ -338,11 +347,12 @@
   <script src="assets/js/jquery.easing.min.js"></script>
   <script src="assets/js/scrolling-nav.js"></script>
   <script src="assets/js/scroll.js"></script>
-  <script src="assets/js/jquery.videoBG.js"></script>
   <script src="assets/js/smooth-scroll.js"></script>
   <script src="assets/js/jquery.scrollx.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+  <script src="assets/js/jquery.counterup.js"></script>
 </body>
 
 
