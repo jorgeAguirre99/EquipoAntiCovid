@@ -108,7 +108,7 @@
         <div class="card ">
           <div class="card-body">
             <img src="media/img/dona.png" height="45px">
-            <p class="card-text mt-3">Dona materiales necesarios para la fabricación de viseras.</p>
+            <p class="card-text mt-3">Dona materiales por Amazon&trade; necesarios para la fabricación de viseras.</p>
             <a href="public/donacion.php" class="btn"><i class="ico fas fa-hand-holding-medical"></i></a>
           </div>
         </div>
@@ -117,7 +117,7 @@
       <div class="card">
         <div class="card-body">
           <img src="media/img/proveedores.png" height="47px">
-          <p class="card-text mt-3">Ponnos en contacto con empresas que donen material.</p>
+          <p class="card-text mt-3">Ponnos en contacto con empresas que donen o necesiten material.</p>
           <a href="public/contacto.php" class="btn" ><i class="ico fas fa-map-marker-alt"></i></a>
         </div>
       </div>
@@ -135,7 +135,7 @@
         <img class="ml-3 titulotext" src="media/img/logo3.png">
       </div>
     </div>
-    <div class="row">
+    <a href="public/nosotros.php" target="_blank" style="color:white;text-decoration:none"><div class="row">
       <div class="col-sm-4 col-md-4 my-5 FadeLeft">
         <i class="cuadroizq fas fa-angle-right"></i>
         <i class="cuadroizqder fas fa-angle-right"></i>
@@ -196,7 +196,7 @@
         <i class="cuadroderizq fas fa-angle-right"></i>
         <i class="cuadroder fas fa-angle-right"></i>
       </div>
-    </div>
+    </div></a>
   </div>
   <div class="c2 container-fluid img2 parallaxminor">
     <div class="soft">

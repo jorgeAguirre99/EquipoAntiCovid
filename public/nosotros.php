@@ -50,7 +50,7 @@
     height: 40px;
     transform: rotate(90deg);
     position: absolute;
-    top: 15px;
+    top: -2px;
     left: 10px;">
         </a>
     </div>
@@ -419,7 +419,8 @@
 
 </div>
 
-
+ <?php include('../assets/mod/cookies.php'); ?>
+ 
   <script src="../assets/js/tether.min.js"></script>
   <script src="../assets/js/bootstrap-carousel-swipe.js"></script>
   <script src="../assets/js/jquery.touch-swipe.min.js"></script>

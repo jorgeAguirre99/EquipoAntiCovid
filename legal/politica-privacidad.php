@@ -166,7 +166,7 @@ All Rights Reserved
         ?>
     </div><!--Fin del contenedor Page-Wapper, que contiene toda la página -->
     <!-- Creamos el aviso de cookies personalizado, si el usuario da a OK, se acepta las cookies-->
-
+    <?php include('mod/cookies.php'); ?>                          
     <!--Cargamos lOS scripts necesarios para que funcionen los distintos recursos de boostrap y funciones utilizadas por la página-->
     <script src="../assets/js/jarallax.min.js"></script>
     <script src="../assets/js/theme.js"></script>

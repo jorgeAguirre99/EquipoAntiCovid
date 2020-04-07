@@ -26,11 +26,11 @@ All Rights Reserved
   <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
   <link rel="stylesheet" href="../assets/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="../assets/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
   <link rel="stylesheet" href="../assets/css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
 </head>
 
 <body data-spy="scroll">
@@ -123,7 +123,7 @@ All Rights Reserved
         ?>
     </div><!--Fin del contenedor Page-Wapper, que contiene toda la página -->
     <!-- Creamos el aviso de cookies personalizado, si el usuario da a OK, se acepta las cookies-->
-
+    <?php include('mod/cookies.php'); ?>                                
     <!--Cargamos lOS scripts necesarios para que funcionen los distintos recursos de boostrap y funciones utilizadas por la página-->
     <script src="../assets/js/jarallax.min.js"></script>
     <script src="../assets/js/theme.js"></script>

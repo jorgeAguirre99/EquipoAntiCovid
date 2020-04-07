@@ -27,7 +27,6 @@
                 $fecha_americana = $fecha_partida[1] ."/". $fecha_partida[0] ."/" . $fecha_partida[2];
                 $fecha_1 = strtotime($fecha_americana."-2 days");
                 $fecha_1 = date("d/m/Y",$fecha_1);
-                echo $fecha_1;
                 //------------------------------------------------------------------
                 $today1 = date("Y-m-d");
                 $today = strtotime($today1."-1 days");

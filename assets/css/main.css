@@ -847,7 +847,14 @@ width: 80%;
 #paso4 img{
  width: 80%;
 }
-
+.info {
+  background: black;
+  color: white;
+  padding: 50px;
+}
+.amazon {
+  width: 20em;
+}
 .pasos{
   background-color: rgba(0, 0, 0, 0.5);
   padding: .5rem 1rem;
@@ -855,6 +862,14 @@ width: 80%;
   margin: 0.4rem 0.8rem !important;
   color: white;
   width: 130px;
+}
+.pasos:hover{
+    color: rgb(255, 255, 255);
+    background-color: rgba(255, 255, 255, 0.38);
+}
+.pasos:focus{
+  border: none;
+  box-shadow: none;
 }
 
 .contribuir2{
@@ -864,9 +879,18 @@ width: 80%;
   margin: 0.4rem 0.8rem !important;
   color: rgba(100, 130, 235, 1);
 }
+.contribuir2:hover{
+  color: rgb(255, 255, 255);
+  background-color: rgba(255, 255, 255, 0.38);
+}
 
 .active1{
-	background-color: rgba(100, 130, 235, 1);
+  background-color: rgba(100, 130, 235, 1);
+  color: rgb(255, 255, 255);
+}
+.pasos.active1:hover{
+  background-color: rgba(100, 130, 235, 0.80);
+  color: rgb(255, 255, 255);
 }
 /*Articulo Politicas de Cookies y Privacidad-------------------------------------------------------------------------------------------------------------------*/        
 #main .inner strong {
@@ -1046,14 +1070,7 @@ width: 80%;
                         color: white;
                     }/*Páginas Secundarias*/
 .c11.parallaxminor {
-  height: 100%;
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  transition: all .25s ease-in;
   height: 70vh;
-  min-height: 0;
 }
 
 
@@ -1225,6 +1242,9 @@ width: 80%;
     .titulotext{
       height:35px;
     }
+    .amazon {
+      width: 12em;
+    }
     .numeros{
 
         font-size:3em;
@@ -1315,6 +1335,9 @@ width: 80%;
     color: white;
     font-size: 1em
 }
+.amazon {
+  width: 14em;
+}
 .navbar-nav{
   padding: 35px 0;
 }
@@ -1356,7 +1379,9 @@ width: 80%;
     .navbar-nav{
       padding: 35px 0;
     }
-    
+    .amazon {
+      width: 16em;
+    }
     .centrallogo{
       height: 240px;
     }
@@ -1400,6 +1425,9 @@ width: 80%;
     .covid{
         margin-right: 60%;
     }
+    .amazon {
+      width: 16em;
+    }
     .empresas .titulo {
       margin: 10px 0 22px 0;
       font-size: 3em;
@@ -1434,6 +1462,9 @@ width: 80%;
     /*Ordenadores pequeños y tablets PRO*/
     .parallaxminor{
       height: auto;
+    }
+    .amazon {
+      width: 16em;
     }
     .punt{
     visibility: visible;

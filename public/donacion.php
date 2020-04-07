@@ -26,11 +26,16 @@
     <?php include('../assets/mod/header.php');?>
 
     <!--FIN HEADER CON MENU-->
-    <section class="my-5 fadeIn">
+    <section class="info fadeIn">
       <div class="container text-center">
         <div class="row">
           <div class="col-md-12 mx-auto">
-            <h5>OS DEJAMOS UN BREVE TUTORIAL DE COMO PODEIS APORTAR VUESTRO GRANITO DE ARENA A TRAVES DE AMAZON</h5>
+            <h5>OS DEJAMOS UN BREVE TUTORIAL DE COMO PODEIS APORTAR VUESTRO GRANITO DE ARENA A TRAVES DE</h5>
+          </div>
+        </div>
+        <div class="row">
+        <div class="col-md-12 mx-auto">
+           <a href="https://www.amazon.es/hz/wishlist/ls/2LE66A0D6H42X?ref_=wl_share" target="_blank"><img src="../media/img/amazon.png" class="amazon"/></a>
           </div>
         </div>
       </div>
@@ -39,7 +44,7 @@
     <div id="principal" class="principal fadeInSlow">
       <div class="overlay"></div>
       <video playsinline="playsinline" autoplay="autoplay" muted="muted" loop="loop">
-        <source src="../media/videos/video.mp4" type="video/mp4">
+        <source src="../media/videos/vid6.mp4" type="video/mp4">
       </video>
       <div class="container h-100">
         <div class="d-flex h-100 text-center align-items-center">
@@ -53,7 +58,7 @@
                 <div class="col-md-8 mx-auto ">
                   <img src="../media/img/paso1.png" >
                   <h5 class="mt-3">Pinchamos en el enlace y seleccionar "Añadir a la cesta" en los productos que quieran donar.</h5>
-                  <a href="https://www.amazon.es/hz/wishlist/ls/2LE66A0D6H42X?ref_=wl_share" class="contribuir2 btn btn-lg" role="button">ENLACE DONACION</a>
+                  <a href="https://www.amazon.es/hz/wishlist/ls/2LE66A0D6H42X?ref_=wl_share" target="_blank" class="contribuir2 btn btn-lg" role="button">ENLACE DONACION</a>
                 </div>
               </div>
             </div>
@@ -91,6 +96,7 @@
 
     <?php include('../assets/mod/footer.php'); ?>
 </div>
+  <?php include('../assets/mod/cookies.php'); ?>
 
   <script type="text/javascript">
     $('.pasos:first').addClass('active1');
