@@ -7,6 +7,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
   <title>EquipoAntiCovid</title>
   <!--BOOTSTRAP CSS -->
   <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
@@ -14,6 +15,7 @@
   <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   <script src="assets/js/jquery.instagramFeed.js" type="text/javascript"></script>
+  <link rel="shortcut icon" href="media/favicon.ico" type="image/ico">
   <link rel="stylesheet" href="assets/css/bootstrap-grid.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="assets/css/bootstrap.min.css">
@@ -23,7 +25,7 @@
         jQuery(document).ready(function($) {
             $('.counter').counterUp({
                 delay: 10,
-                time: 1500
+                time: 2000
             });
         });
     </script>

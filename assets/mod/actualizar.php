@@ -2,12 +2,12 @@
 
 include('connect.php');
 $today = date("Y-m-d");
-$date0 = date("m/d/Y");
+$date0 = date("n/j/Y");
 $sql = "SELECT `COL 1` AS HOY FROM `total_cases` WHERE `COL 1` != 'date' ORDER BY `COL 1` desc LIMIT 2";
 $result = $conexion->query($sql);
 $row = $result->fetch_object();
 $date1 = strtotime($date0."-1 days");
-$date1 = date("d/m/Y",$date1);
+$date1 = date("j/n/Y",$date1);
 $sql4 = "SELECT SUM(`COL 3`) AS C FROM `covid` where `COL 2` = '$date1'";
 $result5 = $conexion->query($sql4);
 $row5 = $result5->fetch_object();
@@ -18,9 +18,9 @@ if($today != $row->HOY || $row5->C == NULL){
   $source = file_get_contents($url);
   file_put_contents('media/inc/total_cases.csv', $source);
   
-  //$url2 = 'https://covid19.isciii.es/resources/serie_historica_acumulados.csv';
-  //$source2 = file_get_contents($url2);
-  //file_put_contents('media/inc/serie_historica_acumulados.csv', $source2);
+  $url2 = 'https://covid19.isciii.es/resources/serie_historica_acumulados.csv';
+  $source2 = file_get_contents($url2);
+  file_put_contents('media/inc/serie_historica_acumulados.csv', $source2);
   //Lo recorremos
 $fila = 0;
 //Abrimos nuestro archivo

@@ -113,6 +113,16 @@ TODOS LOS DERECHOS RESERVADOS ©2019*/
   animation-fill-mode: forwards;
   -webkit-animation-fill-mode: forwards;
 }
+.fadeInQuick {
+  animation-name: fadeIn;
+  -webkit-animation-name: fadeIn;
+  animation-duration: 0.5s;
+  -webkit-animation-duration: 0.5s;
+  animation-timing-function: ease;
+  -webkit-animation-timing-function: ease;
+  animation-fill-mode: forwards;
+  -webkit-animation-fill-mode: forwards;
+}
 
 .fadeInSlow {
   animation-name: fadeInSlow;
@@ -819,6 +829,7 @@ img.float-left.ml-3 {
   min-height: 600px;
   width: 100%;
   height: auto;
+  transition: all .25s ease;
   overflow: hidden;
 }
 .c0 #principal video {
@@ -837,15 +848,19 @@ img.float-left.ml-3 {
 }
 #paso1 img{
 width: 80%;
+transition: all .25s ease;
 }
 #paso2 img{
  width: 100%;
+ transition: all .25s ease;
 }
 #paso3 img{
  width: 80%;
+ transition: all .25s ease;
 }
 #paso4 img{
  width: 80%;
+ transition: all .25s ease;
 }
 .info {
   background: black;
@@ -862,10 +877,12 @@ width: 80%;
   margin: 0.4rem 0.8rem !important;
   color: white;
   width: 130px;
+  transition: all .25s ease;
 }
 .pasos:hover{
     color: rgb(255, 255, 255);
     background-color: rgba(255, 255, 255, 0.38);
+    transition: all .25s ease;
 }
 .pasos:focus{
   border: none;
@@ -890,6 +907,7 @@ width: 80%;
 }
 .pasos.active1:hover{
   background-color: rgba(100, 130, 235, 0.80);
+  transition: all .25s ease;
   color: rgb(255, 255, 255);
 }
 /*Articulo Politicas de Cookies y Privacidad-------------------------------------------------------------------------------------------------------------------*/        

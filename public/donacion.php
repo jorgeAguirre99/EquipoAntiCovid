@@ -9,6 +9,7 @@
   <script src="https://kit.fontawesome.com/d2b8efb2df.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
   <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../media/favicon.ico" type="image/ico">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
@@ -53,39 +54,39 @@
             <a href="#paso2" class="pasos btn btn-lg mt-3" role="button">PASO 2</a>
             <a href="#paso3" class="pasos btn btn-lg mt-3" role="button">PASO 3</a>
             <a href="#paso4" class="pasos btn btn-lg mt-3" role="button">PASO 4</a>
-            <div id="paso1" class="container my-3 section">
+            <div id="paso1" class="container my-3 section fadeInQuick">
               <div class="row">
                 <div class="col-md-8 mx-auto ">
                   <img src="../media/img/paso1.png" >
                   <h5 class="mt-3">Pinchamos en el enlace y seleccionar "Añadir a la cesta" en los productos que quieran donar.</h5>
-                  <a href="https://www.amazon.es/hz/wishlist/ls/2LE66A0D6H42X?ref_=wl_share" target="_blank" class="contribuir2 btn btn-lg" role="button">ENLACE DONACION</a>
+                  <a href="https://www.amazon.es/hz/wishlist/ls/2LE66A0D6H42X?ref_=wl_share" target="_blank" class="contribuir2 btn btn-lg" role="button">ENLACE DONACIÓN</a>
                 </div>
               </div>
             </div>
-            <div id="paso2" class="container my-3 section">
+            <div id="paso2" class="container my-3 section fadeInQuick">
               <div class="row">
                 <div class="col-md-8 mx-auto">
                   <img src="../media/img/paso2.png" >
                   <h5 class="mt-3">Pinchamos en tramitar pedido y continuamos con el siguiente paso.</h5>
-                  <a href="https://www.amazon.es/hz/wishlist/ls/2LE66A0D6H42X?ref_=wl_share" class="contribuir2 btn btn-lg" role="button">ENLACE DONACION</a>
+                  <a href="https://www.amazon.es/hz/wishlist/ls/2LE66A0D6H42X?ref_=wl_share" class="contribuir2 btn btn-lg" role="button">ENLACE DONACIÓN</a>
                 </div>
               </div>
             </div>
-            <div id="paso3" class="container my-3 section">
+            <div id="paso3" class="container my-3 section fadeInQuick">
               <div class="row">
                 <div class="col-md-8 mx-auto">
                   <img src="../media/img/paso3.png" >
                   <h5 class="mt-3">Seleccionamos la siguiente dirección y continuamos.</h5>
-                  <a href="https://www.amazon.es/hz/wishlist/ls/2LE66A0D6H42X?ref_=wl_share" class="contribuir2 btn btn-lg" role="button">ENLACE DONACION</a>
+                  <a href="https://www.amazon.es/hz/wishlist/ls/2LE66A0D6H42X?ref_=wl_share" class="contribuir2 btn btn-lg" role="button">ENLACE DONACIÓN</a>
                 </div>
               </div>
             </div>
-            <div id="paso4" class="container my-3 section">
+            <div id="paso4" class="container my-3 section  fadeInQuick">
               <div class="row">
                 <div class="col-md-8 mx-auto">
                   <img src="../media/img/paso4.png" >
                   <h5 class="mt-3">Como ultimo paso finalizamos procediendo con el pago.</h5>
-                  <a href="https://www.amazon.es/hz/wishlist/ls/2LE66A0D6H42X?ref_=wl_share" class="contribuir2 btn btn-lg" role="button">ENLACE DONACION</a>
+                  <a href="https://www.amazon.es/hz/wishlist/ls/2LE66A0D6H42X?ref_=wl_share" class="contribuir2 btn btn-lg" role="button">ENLACE DONACIÓN</a>
                 </div>
               </div>
             </div>
@@ -113,6 +114,8 @@
       return false;
     });
   </script>
+      <script src="../assets/js/jarallax.min.js"></script>
+    <script src="../assets/js/theme.js"></script>
   <script src="../assets/js/smooth-scroll.js"></script>
 </body>
 

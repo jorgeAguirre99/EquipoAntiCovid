@@ -14,6 +14,7 @@
   <script src="https://kit.fontawesome.com/d2b8efb2df.js" crossorigin="anonymous"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" type="text/javascript" charset="utf-8"></script>
   <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
+  <link rel="shortcut icon" href="../media/favicon.ico" type="image/ico">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js" data-cfasync="false"></script>
@@ -28,7 +29,7 @@
 
   <?php include('../assets/mod/header.php');?>
 
-  <section class="header6 cid-rVejhWVcLj mbr-fullscreen fadeIn" data-bg-video="https://www.youtube.com/watch?v=qGS62xEDJso" style="min-height: 75vh;" id="header6-l">
+  <section class="header6 cid-rVejhWVcLj mbr-fullscreen fadeIn" data-bg-video="https://www.youtube.com/watch?v=e_l0UM8v5x4" style="min-height: 75vh;" id="header6-l">
     <div class="mbr-overlay" style="opacity: 0.3; background-color: rgb(15, 118, 153);">
     </div>
 
