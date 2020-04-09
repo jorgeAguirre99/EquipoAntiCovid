@@ -291,7 +291,7 @@
   </div>
   <div class="form-group">
   <label for="exampleFormControlTextarea1">Comentarios</label>
-  <textarea class="form-control" rows="3" name="comentario" required = "true"></textarea>
+  <textarea class="form-control" rows="3" placeholder="Comentario" name="comentario" required = "true"></textarea>
   </div>
   <button type="submit" class="btn PopIn">Enviar Comentario</button>
   </form>
