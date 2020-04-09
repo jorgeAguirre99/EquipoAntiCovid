@@ -1,0 +1,4 @@
+AuthType Basic
+AuthName "Access to /proyecto"
+AuthUserFile /kunden/homepages/24/d822668284/htpasswd
+Require user Usuario1

@@ -595,15 +595,7 @@ nav {
   .c0{
       padding: 0;
   }
-  /*video {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: auto;
-    z-index: 0;
-    visibility: visible;
-    }*/
+
   .c0 .row{
     overflow: hidden;
     margin: auto 0;
@@ -721,8 +713,38 @@ blockquote {
     transition: all .25s ease;
     margin: 0 auto;
   }
+.c16 {
+  margin-top:3em;
+}
+.c16 .col{
+  text-align: center;
+  margin-top: 40px;
+}
+.c16 .row{
 
-  
+  padding: 5em;
+
+}  
+.c16 .card{
+
+  border-radius: 0;
+  border: none;
+} 
+
+.c16 .btn{
+
+  border-radius: 0;
+  background-color: rgba(100, 130, 235,1)!important; 
+  border-color: rgba(100, 130, 235,1)!important;
+  transition: all .25s ease;
+} 
+.c16 .btn:hover{
+
+  border-radius: 0;
+  background-color: #fddb3a!important; 
+  border-color: #fddb3a!important;
+  transition: all .25s ease;
+} 
 .c4 .zoom-image:hover {
     transform: scale(1.05); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   
@@ -752,6 +774,12 @@ img.float-left.ml-3 {
               .img7{
                 background-image: url('../../media/img/7c.jpg');
                 }
+                .img8{
+                  background-image: url('../../media/img/8c.jpg');
+                  }
+                  .img9{
+                    background-image: url('../../media/img/9c.jpg')!important;
+                    }
 .parallaxminor {
     background-attachment: fixed;
     background-position: center;
@@ -1273,6 +1301,9 @@ transition: all .25s ease;
     .punt{
         visibility: hidden;
     }
+    .c16 .btn{
+      padding: 1rem 2rem;
+    }
     .centrallogo{
       height: 210px;
     }
@@ -1293,6 +1324,17 @@ transition: all .25s ease;
     margin: 0.4rem 0 !important;
     color: white;
     font-size: 0.8em;
+}
+.c16 .row{
+
+  padding: 0;
+
+} 
+.c16 {
+  margin-top:0;
+}
+.c16 .col{
+  text-align: center;
 }
 }
 
@@ -1317,6 +1359,9 @@ transition: all .25s ease;
     .c0 a.btn{
         padding: 0em 6em;
         font-size: 1.2em;
+    }
+    .c16 .btn{
+      padding: 1rem 3rem;
     }
     .titulotext{
       height:55px;
@@ -1359,6 +1404,18 @@ transition: all .25s ease;
 .navbar-nav{
   padding: 35px 0;
 }
+.c16 .row{
+
+  padding: 0;
+
+  
+} 
+.c16 {
+  margin-top:0;
+}
+.c16 .col{
+  text-align: center;
+}
 }
 
 @media (min-width: 576px) and (max-width:767.98px) {
@@ -1366,6 +1423,12 @@ transition: all .25s ease;
     .covid{
         margin-left: 8%;
         margin-right: 8%;
+    }
+    .c16 {
+      margin-top:0;
+    }
+    .c16 .btn{
+      padding: 1rem 3.5rem;
     }
     .maintitle {
       text-transform: uppercase;
@@ -1424,6 +1487,14 @@ transition: all .25s ease;
     margin: 0.4rem 0rem !important;
     color: white;
 }
+.c16 .row{
+
+  padding: 0;
+
+} 
+.c16 .col{
+  text-align: center;
+}
 }
 
 @media (min-width: 760px) and (max-width:991.98px) {
@@ -1435,6 +1506,9 @@ transition: all .25s ease;
       margin: 0.4rem 0.4rem !important;
       color: white;
   }
+  .c16 .btn{
+    padding: 1rem 6rem;
+  }
   .maintitle {
     text-transform: uppercase;
     letter-spacing: 7px;
@@ -1442,6 +1516,9 @@ transition: all .25s ease;
 }
     .covid{
         margin-right: 60%;
+    }
+    .c16 .col{
+      text-align: center;
     }
     .amazon {
       width: 16em;
@@ -1474,6 +1551,11 @@ transition: all .25s ease;
     .titulotext{
       height:60px;
     }
+    .c16 .row{
+
+      padding: 3em;
+    
+    } 
 }
 
 @media (min-width: 810px) and (max-width:1199.98px) {
@@ -1492,13 +1574,25 @@ transition: all .25s ease;
       letter-spacing: 7px;
       font-size: 5em;
   }
+  .c16 .btn{
+    padding: 1rem 8rem;
+  }
+  
+.c16 .row{
+
+  padding: 4em;
+
+}  
 }
-}
+
 
 @media screen and (min-width: 1200px) {
 
     .punt{
     visibility: visible;
+    }
+    .c16 .btn{
+      padding: 1rem 10rem;
     }
 }
 
