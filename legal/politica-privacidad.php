@@ -17,7 +17,7 @@ All Rights Reserved
   <meta name="description" content="Equipo Anti Covid es un proyecto solidario que nace de la mano de jóvenes estudiantes con la colaboración de profesores y profesionales en el sector de la impresión 3D, para facilitar y suministrar material de protección a sanitarios y fuerzas de seguridad de la Comunidad de Madrid"/>
   <meta name="robots" content="index, follow" />
   <meta name="keywords" content="EquipoAntiCovid, Coronavirus, Covid-19, Covid, Spain,Equipo, España Coronavirus, AntiCovid, Madrid, Comunidad de Madrid, Hospitales, Viseras, Impresión 3D, 3D,3D Printer, Technology, Tecnología, UFV, Mafre, Cartuchos.es, FábdeFab, EXarchitects, Bomberos Fuenlabrada, Truyol Digital, Universitários, Students, Amazon, Cases, Coronavirus Cases"/>
-  <title>Cookies | EquipoAntiCovid</title>
+  <title>Privacidad | EquipoAntiCovid</title>
   <!--BOOTSTRAP CSS -->
   <script>
  //<![CDATA[

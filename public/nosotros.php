@@ -1,3 +1,11 @@
+<!--
+Design by: Hype Technology Spain
+Made by: Mathias Moser
+Hype Technology Spain: http://hype.com.es
+Copyright 2019 - 2020
+All Rights Reserved
+-->
+
 <!DOCTYPE html>
 <head lang="es">
   <meta charset="utf-8">
@@ -98,8 +106,8 @@
             <i class="cuadroizqder fas fa-angle-right"></i>
             <div class="subtitles mbr-fonts-style mbr-section-title" style="display: flow-root;padding-top: 2em;">
             <i class="iconos fas fa-industry"></i>
-            <i class="iconos fas fa-tasks"></i>
-            <p>Producción y Coordinación</p>
+            <i class="iconos fas fa-cubes"></i>
+            <p>Producción y Colaboración de Fabricación</p>
             </div>
             <i class="cuadroderizq fas fa-angle-right"></i>
             <i class="cuadroder fas fa-angle-right"></i>
@@ -117,10 +125,56 @@
                             Fabricio Santos</p>
                       </div>
                       <div class="item-role px-2">
+                          <p>Fábrica de Fabricantes</p>
                           <p>Doctorando en Arquitectura</p>
                       </div>
                   </div>
               </div><div class="team-item col-lg-3 col-md-6 slideanim">
+                  <div class="item-image">
+                      <img src="../media/img/img20.jpg" alt="" title="">
+                  </div>
+                  <div class="item-caption py-3">
+                      <div class="item-name px-2">
+                          <p class="mbr-fonts-style display-5">
+                            Eduardo González</p>
+                      </div>
+                      <div class="item-role px-2">
+                          <p>EXarchitects</p>
+                      </div>
+                  </div>
+              </div><div class="team-item col-lg-3 col-md-6 FadeRight">
+                  <div class="item-image">
+                      <img src="../media/img/img19.jpeg" alt="" title="">
+                  </div>
+                  <div class="item-caption py-3">
+                      <div class="item-name px-2">
+                          <p class="mbr-fonts-style display-5">
+                            Agustín Arroyo</p>
+                      </div>
+                      <div class="item-role px-2">
+                          <p>Flowalistik</p>
+                      </div>
+                  </div>
+              </div>
+            </div>
+          </div>
+          <div class="agrupacion">
+          <div class="row slideanim">
+            <div class="col">
+            <i class="cuadroizq fas fa-angle-right"></i>
+            <i class="cuadroizqder fas fa-angle-right"></i>
+            <div class="subtitles mbr-fonts-style mbr-section-title" style="display: flow-root;padding-top: 2em;">
+            <i class="iconos fas fa-people-carry"></i>
+            <i class="iconos fas fa-tasks"></i>
+            <p>Coordinación</p>
+            </div>
+            <i class="cuadroderizq fas fa-angle-right"></i>
+            <i class="cuadroder fas fa-angle-right"></i>
+            </div>
+          </div>
+          <div class="row media-row slideanim">
+              
+            <div class="team-item col-lg-3 col-md-6 FadeLeft">
                   <div class="item-image">
                       <img src="../media/img/img14.jpeg" alt="" title="">
                   </div>
@@ -133,7 +187,8 @@
                           <p>Arquitectura</p>
                       </div>
                   </div>
-              </div><div class="team-item col-lg-3 col-md-6 FadeRight">
+              </div>
+              <div class="team-item col-lg-3 col-md-6 FadeRight">
                   <div class="item-image">
                       <img src="../media/img/img15.jpeg" alt="" title="">
                   </div>
@@ -147,6 +202,7 @@
                       </div>
                   </div>
               </div>
+
             </div>
           </div>
           <div class="agrupacion">
@@ -156,6 +212,7 @@
             <i class="cuadroizqder fas fa-angle-right"></i>
             <div class="subtitles mbr-fonts-style mbr-section-title" style="display: flow-root;padding-top: 2em;">
             <i class="iconos fas fa-user-cog"></i>
+            <i class="iconos fas fa-calculator"></i>
             <p>Gestión</p>
             </div>
             <i class="cuadroderizq fas fa-angle-right"></i>
@@ -192,7 +249,7 @@
                       </div>
                   </div>
             </div>
-            <div class="team-item col-lg-3 col-md-6 FadeRight">
+            <div class="team-item col-lg-3 col-md-6 slideanim">
                   <div class="item-image">
                       <img src="../media/img/img4.jpeg" alt="" title="">
                   </div>
@@ -205,9 +262,43 @@
                           <p>Ingeniería Informática</p>
                       </div>
                   </div>
-              </div>
             </div>
+              <div class="team-item col-lg-3 col-md-6 FadeRight">
+                  <div class="item-image">
+                      <img src="../media/img/img22.jpg" alt="" title="">
+                  </div>
+                  <div class="item-caption py-3">
+                      <div class="item-name px-2">
+                          <p class="mbr-fonts-style display-5">
+                            Cristina Morala</p>
+                      </div>
+                      <div class="item-role px-2">
+                          <p>Ingeniería Informática</p>
+                      </div>
+                  </div>
+            </div>
+            </div>
+             </div>
+            <div class="agrupacion">
+          <div class="row slideanim"></div>
+            <div class="row media-row">
+            <div class="team-item col-lg-3 col-md-6 slideanim">
+                  <div class="item-image">
+                      <img src="../media/img/img21.jpeg" alt="" title="">
+                  </div>
+                  <div class="item-caption py-3">
+                      <div class="item-name px-2">
+                          <p class="mbr-fonts-style display-5">
+                            Alicia Estefanía</p>
+                      </div>
+                      <div class="item-role px-2">
+                          <p>Ingeniería Informática</p>
+                      </div>
+                  </div>
+              </div>
+
           </div>
+        </div>
           <div class="agrupacion">
           <div class="row slideanim">
             <div class="col">

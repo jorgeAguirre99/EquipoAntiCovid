@@ -12,7 +12,7 @@
   <meta name="keywords" content="EquipoAntiCovid, Coronavirus, Covid-19, Covid, Spain,Equipo, España Coronavirus, AntiCovid, Madrid, Comunidad de Madrid, Hospitales, Viseras, Impresión 3D, 3D,3D Printer, Technology, Tecnología, UFV, Mafre, Cartuchos.es, FábdeFab, EXarchitects, Bomberos Fuenlabrada, Truyol Digital, Universitários, Students, Amazon, Cases, Coronavirus Cases"/>
   <title>Inicio | EquipoAntiCovid</title>
   <!--BOOTSTRAP CSS -->
-  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
   <script src="https://kit.fontawesome.com/d2b8efb2df.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Arimo&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />

@@ -13,13 +13,14 @@
         $sql3 = "SELECT `COL 2` AS INFECTED FROM `total_cases` where `COL 1` = '$today';";
         $result = $conexion->query($sql1);
         $row =  $result->fetch_object();
-        $infectes = $row->INFECTADOSES;
+        $infectes = number_format($row->INFECTADOSES,0,',','.');
         $result1 = $conexion->query($sql2);
         $row1 =  $result1->fetch_object();
-        $recues = $row1->RECUPERADOSES;
+        $recues = number_format($row1->RECUPERADOSES, 0, ',','.');
         $result2 = $conexion->query($sql3);
         $row2 =  $result2->fetch_object();
-        $infectados = $row2->INFECTED;
+        $infectados = number_format($row2->INFECTED, 2, ',','.');
+        
         }else{
                 $fecha = date("j/n/Y");
                 //No toqueis este codigo, es sagrado, inutil pero sagrado-----------
@@ -36,12 +37,13 @@
                 $sql3 = "SELECT `COL 2` AS INFECTED FROM `total_cases` where `COL 1` = '$today';";
                 $result = $conexion->query($sql1);
                 $row =  $result->fetch_object();
-                $infectes = $row->INFECTADOSES;
+                $infectes = number_format($row->INFECTADOSES,0,',','.');
                 $result1 = $conexion->query($sql2);
                 $row1 =  $result1->fetch_object();
-                $recues = $row1->RECUPERADOSES;
+                $recues = number_format($row1->RECUPERADOSES, 0, ',','.');
                 $result2 = $conexion->query($sql3);
                 $row2 =  $result2->fetch_object();
-                $infectados = $row2->INFECTED;
+                $infectados = number_format($row2->INFECTED, 2, ',','.');
+
         }
 ?>
