@@ -46,7 +46,7 @@ Access our [Instagram](https://www.instagram.com/equipoanticovid/) to know more 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
-### Web Desing and Programming Team
+### Web Design and Programming Team
 
 This webpage was made within 2 weeks, in order to offer users the posibility of buying materials for the 3D Masks and Protection Shields printting.
 
