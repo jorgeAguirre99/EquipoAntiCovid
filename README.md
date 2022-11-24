@@ -6,6 +6,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
+[![Instagram][instagram-shield]][instagram-url]
 
 
 
@@ -31,6 +32,12 @@
     <a href="https://github.com/matbmoser/AntiCovidTeam/issues">Request Feature</a>
   </p>
 </div>
+
+## History and Work Developed
+
+Access our [Instagram](https://www.instagram.com/equipoanticovid/) to know more about our actions during the 2020 Pandemic:
+
+[https://www.instagram.com/equipoanticovid/](https://www.instagram.com/equipoanticovid/)
 
 ### Built With
 
@@ -76,4 +83,6 @@ Distributed under the MIT License. See `LICENSE.md` for more information.
 [license-url]: https://github.com/matbmoser/AntiCovidTeam/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://linkedin.com/in/mathias-brunkow-moser
+[instagram-shield]: https://img.shields.io/badge/-Instagram-white.svg?style=for-the-badge&logo=Instagram
+[instagram-url]: https://www.instagram.com/equipoanticovid/
 [product-screenshot]: images/screenshot.png
